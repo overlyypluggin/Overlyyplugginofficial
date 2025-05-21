@@ -1,234 +1,123 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Bottega Veneta Products</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        let cart = [];
 
-        function addToCart(item) {
-            cart.push(item);
-            alert(item + " added to cart.");
-        }
-    </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bottega Veneta - Overlyy Pluggin</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <img src="logo.png" alt="Logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#" onclick="document.getElementById('cart').style.display='block'">Cart</a>
-    </nav>
-</header>
-<div class="container">
-    <h2>Bottega Veneta</h2>
-    <div class="product-grid">
+    <header>
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
 
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1050.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
+    <section class="product-grid">
+        <h2>Bottega Veneta Collection</h2>
         
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$900.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$970.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1050.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1500.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1050.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1598.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1500.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1200.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1150.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1150.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1150.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1150.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1150.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1150.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1150.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1150.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1150.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1150.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1150.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1450.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1450.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1450.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1350.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1450.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-    </div>
+<div class="product-card">
+    <h3>Orbit Sneaker in Silver / White / Optic White Rubber</h3>
 </div>
-<div id="cart" style="display:none;">
-    <h4>Cart (not persistent)</h4>
-    <p>Items will appear here when added.</p>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Mud / White</h3>
 </div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Abyss / Silver</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Gloss / Silver</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Gold / White</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in White</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Parakeet / Silver</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Pink</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Brown</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Red / Wisteria</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Silver / Green</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Silver / Blue</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Silver / Olive</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Silver / Black</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Silver / Yellow</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Silver / Red</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Silver / Purple</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Silver / Orange</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Silver / Teal</h3>
+</div>
+
+<div class="product-card">
+    <h3>Orbit Sneaker in Silver / Lavender</h3>
+</div>
+
+<div class="product-card">
+    <h3>Lug Chelsea Boot - Black</h3>
+</div>
+
+<div class="product-card">
+    <h3>Lug Chelsea Boot - Fondant</h3>
+</div>
+
+<div class="product-card">
+    <h3>Lug Chelsea Boot - Sea Salt</h3>
+</div>
+
+<div class="product-card">
+    <h3>Lug Chelsea Ankle Boot - Black</h3>
+</div>
+
+<div class="product-card">
+    <h3>Tire Chelsea Boot - Black / Sea Salt</h3>
+</div>
+
+    </section>
 </body>
 </html>

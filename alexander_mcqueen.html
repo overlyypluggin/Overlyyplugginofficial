@@ -1,194 +1,103 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Alexander McQueen Products</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        let cart = [];
 
-        function addToCart(item) {
-            cart.push(item);
-            alert(item + " added to cart.");
-        }
-    </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alexander McQueen - Overlyy Pluggin</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <img src="logo.png" alt="Logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#" onclick="document.getElementById('cart').style.display='block'">Cart</a>
-    </nav>
-</header>
-<div class="container">
-    <h2>Alexander McQueen</h2>
-    <div class="product-grid">
+    <header>
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
 
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$590.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
+    <section class="product-grid">
+        <h2>Alexander McQueen Collection</h2>
         
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$760.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$590.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$760.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$590.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$830.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$830.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$850.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$850.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$790.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$850.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$760.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$590.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$590.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$760.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$506.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$340.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$352.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$389.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$505.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-    </div>
+<div class="product-card">
+    <h3>Oversized Sneaker in White/Black</h3>
 </div>
-<div id="cart" style="display:none;">
-    <h4>Cart (not persistent)</h4>
-    <p>Items will appear here when added.</p>
+
+<div class="product-card">
+    <h3>Oversized Sneaker in White/Blue</h3>
 </div>
+
+<div class="product-card">
+    <h3>Oversized Sneaker in White/Green</h3>
+</div>
+
+<div class="product-card">
+    <h3>Oversized Sneaker in White/Natural</h3>
+</div>
+
+<div class="product-card">
+    <h3>Oversized Sneaker in Black/White</h3>
+</div>
+
+<div class="product-card">
+    <h3>Oversized Retro Sneaker in White/Rock/Black</h3>
+</div>
+
+<div class="product-card">
+    <h3>Oversized Retro Sneaker in White/Blue</h3>
+</div>
+
+<div class="product-card">
+    <h3>Tread Slick Boot in White</h3>
+</div>
+
+<div class="product-card">
+    <h3>Tread Slick Boot in Black/White</h3>
+</div>
+
+<div class="product-card">
+    <h3>Flexion Sneaker in Burgundy/Orange</h3>
+</div>
+
+<div class="product-card">
+    <h3>Sprint Runner in White/Silver</h3>
+</div>
+
+<div class="product-card">
+    <h3>Oversized Sneaker in White/Pink</h3>
+</div>
+
+<div class="product-card">
+    <h3>Oversized Sneaker in White/Mint</h3>
+</div>
+
+<div class="product-card">
+    <h3>Oversized Sneaker in White/Shirting Blue</h3>
+</div>
+
+<div class="product-card">
+    <h3>Oversized Sneaker in White/Mirror</h3>
+</div>
+
+<div class="product-card">
+    <h3>Oversized Sneaker in White/Paris Blue</h3>
+</div>
+
+<div class="product-card">
+    <h3>Oversized Sneaker in White/Dream Blue (Women's)</h3>
+</div>
+
+<div class="product-card">
+    <h3>Oversized Sneaker in White/Shock Pink (Women's)</h3>
+</div>
+
+<div class="product-card">
+    <h3>Oversized Sneaker in White/Red</h3>
+</div>
+
+<div class="product-card">
+    <h3>Oversized Sneaker in White/Black Sole</h3>
+</div>
+
+    </section>
 </body>
 </html>

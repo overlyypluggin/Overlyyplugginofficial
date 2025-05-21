@@ -1,234 +1,123 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Rick Owens Products</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        let cart = [];
 
-        function addToCart(item) {
-            cart.push(item);
-            alert(item + " added to cart.");
-        }
-    </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rick Owens - Overlyy Pluggin</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <img src="logo.png" alt="Logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#" onclick="document.getElementById('cart').style.display='block'">Cart</a>
-    </nav>
-</header>
-<div class="container">
-    <h2>Rick Owens</h2>
-    <div class="product-grid">
+    <header>
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
 
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1165.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
+    <section class="product-grid">
+        <h2>Rick Owens Collection</h2>
         
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$594.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$725.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1495.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1250.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$649.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1180.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1045.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$460.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$300.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$625.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$388.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$907.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$970.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$640.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$970.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$950.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$904.12</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$950.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1225.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1190.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$660.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1199.99</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1100.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1175.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-    </div>
+<div class="product-card">
+    <h3>Rick Owens Geobasket Sneakers</h3>
 </div>
-<div id="cart" style="display:none;">
-    <h4>Cart (not persistent)</h4>
-    <p>Items will appear here when added.</p>
+
+<div class="product-card">
+    <h3>Rick Owens DRKSHDW High Top</h3>
 </div>
+
+<div class="product-card">
+    <h3>Rick Owens DRKSHDW Sneakers - Dark Dust / Milk</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Jumbo Lace Padded Sneakers</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Jumbo Lace High Sneakers</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens DRKSHDW Lido Panelled High-Top Sneakers</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Megalaced Low Sneaks Sneakers</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Megalace Low Sneaks in Dinge/Milk</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Maximal Megalace Runners</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Men's Maximal Runner Sneakers</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens SS20 'TECUATL' Megalace Runners</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens 'Ramones' Sneakers</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens SS25 Vintage Sneaks</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Vintage Sneaks - Milk</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Vintage Sneaks - Denim Black</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Leather Vintage Sneaker</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Hollywood Hollowed Vintage Sneakers</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Men's Sneakers Black</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Low Sneakers</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Jumbolaced Padded Hi Sneakers</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens SS25 Holywood Geobasket</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Geobasket Sneakers - Black/White</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Jumbo Lace Padded Low Sneakers</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Geobasket - Chalk White</h3>
+</div>
+
+<div class="product-card">
+    <h3>Rick Owens Jumbo Lace Sneaker - Milk</h3>
+</div>
+
+    </section>
 </body>
 </html>

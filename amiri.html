@@ -1,434 +1,223 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Amiri Products</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        let cart = [];
 
-        function addToCart(item) {
-            cart.push(item);
-            alert(item + " added to cart.");
-        }
-    </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amiri - Overlyy Pluggin</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <img src="logo.png" alt="Logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#" onclick="document.getElementById('cart').style.display='block'">Cart</a>
-    </nav>
-</header>
-<div class="container">
-    <h2>Amiri</h2>
-    <div class="product-grid">
+    <header>
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
 
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$850.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
+    <section class="product-grid">
+        <h2>Amiri Collection</h2>
         
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$349.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$618.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$380.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$500.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$500.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$320.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$450.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$634.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$634.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$675.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$642.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$511.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$342.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$412.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$682.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$441.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$931.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$885.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$885.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$660.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$660.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$750.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$725.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$511.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$511.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$391.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1666.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$449.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$676.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$633.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$373.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$382.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$757.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$199.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$628.61</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$690.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$279.99</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$650.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$759.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$618.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$299.99</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$299.99</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$299.99</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$956.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$541.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$639.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$430.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$845.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$820.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-    </div>
+<div class="product-card">
+    <h3>Amiri Bone Runner 'White'</h3>
 </div>
-<div id="cart" style="display:none;">
-    <h4>Cart (not persistent)</h4>
-    <p>Items will appear here when added.</p>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'White Black'</h3>
 </div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Black'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Royal Blue'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Orange'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Mixed White'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Alabaster'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Warm Grey'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Blue & White'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'White Red & Grey'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Black and White'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Blue'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Red'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Tan Grey'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Baby Blue'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'White Red'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'White Black Teal'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Olive'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Grey Lime'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Alabaster Green'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'White Grey'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Off-White Black'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Pale Peach'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Stone Grey'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Bone Runner 'Black White'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top High 'Black Red'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top High 'Triple White'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top Low 'White Red'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top Low 'Black White'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top Low 'White'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top Low 'Red White'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top Low 'Collegiate - Red White'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top Low 'White Lime'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top Low 'Black Grey'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top High 'White Black'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Sneakers 'All Black'</h3>
+</div>
+
+<div class="product-card">
+    <h3>MA Quad Skel-Top Low 'Black'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri 'Skel Top Low' Sneakers</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Two-Tone Skel Top Sneaker</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top Low Sneakers 'Black'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Two-Tone Leather Skel Sneakers</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Ma Quad Skel Sneakers</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Low Top Sneakers 'Asphalt'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top Sneakers</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top Low 'White Orange'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top Low 'Double Grey'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top Low 'Teal Slate Blue'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top High 'Green Black'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top Low 'White Blue'</h3>
+</div>
+
+<div class="product-card">
+    <h3>Amiri Skel Top Low 'Red'</h3>
+</div>
+
+    </section>
 </body>
 </html>

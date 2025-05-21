@@ -1,314 +1,163 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>BAPE Products</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        let cart = [];
 
-        function addToCart(item) {
-            cart.push(item);
-            alert(item + " added to cart.");
-        }
-    </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BAPE - Overlyy Pluggin</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <img src="logo.png" alt="Logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#" onclick="document.getElementById('cart').style.display='block'">Cart</a>
-    </nav>
-</header>
-<div class="container">
-    <h2>BAPE</h2>
-    <div class="product-grid">
+    <header>
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
 
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$309.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
+    <section class="product-grid">
+        <h2>BAPE Collection</h2>
         
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$299.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$309.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$299.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$239.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$309.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$299.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$299.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$339.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$329.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$329.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$247.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$247.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$329.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$376.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$376.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$459.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$361.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$961.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$773.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$383.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$601.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$734.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$758.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$734.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$306.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$361.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$1999.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$773.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$361.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$499.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$699.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$412.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$533.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="nan">
-            <h4>nan</h4>
-            <p>7, 8, 9, 10, 11, 12, 13</p>
-            <p>$688.0</p>
-            <button onclick="addToCart('nan')">Add to Cart</button>
-        </div>
-        
-    </div>
+<div class="product-card">
+    <h3>BAPE STA #3 MENS</h3>
 </div>
-<div id="cart" style="display:none;">
-    <h4>Cart (not persistent)</h4>
-    <p>Items will appear here when added.</p>
+
+<div class="product-card">
+    <h3>BAPE STA #3 LADIES</h3>
 </div>
+
+<div class="product-card">
+    <h3>BAPE STA ICON MENS</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE STA ICON LADIES</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE STA #2 MENS</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE STA #5 MENS</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE STA BAPE X STADIUM GOODS MENS</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE STA BAPE X STADIUM GOODS LADIES</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE STA PEARL GOAT MENS</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE STA ICON #1 MENS</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA #1 MENS</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA #1 LADIES</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA #3 MENS</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE CROSS STA MENS</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA #2 M1</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA #6</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA #2</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA #5</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA #4 M1</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA #2 M2</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA #3 M1 White</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA #1 L Blue</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA Leather</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA Camouflage Panel</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA Paneled</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA Special Edition</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA Premium</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA Deluxe</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA Urban Camo</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA Classic</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA Neon</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA Reflective</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA Suede Pack</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA Vintage</h3>
+</div>
+
+<div class="product-card">
+    <h3>BAPE SK8 STA All-White</h3>
+</div>
+
+    </section>
 </body>
 </html>
