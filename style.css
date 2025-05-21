@@ -210,3 +210,37 @@ nav a {
   display: inline-block;
   text-align: left;
 }
+.hero-banner {
+  background: linear-gradient(135deg, #111 50%, #ffcc00 50%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+  border-bottom: 2px solid #000;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+}
+
+.banner-logo {
+  width: 100px;
+  height: auto;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.4));
+}
+
+.banner-text h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.banner-text p {
+  font-size: 14px;
+  color: #eee;
+  margin-top: 5px;
+}
