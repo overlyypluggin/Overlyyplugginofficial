@@ -1,0 +1,81 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #111;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 15px 30px;
+}
+
+header .logo {
+  height: 40px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-banner {
+  text-align: center;
+  padding: 50px 20px 30px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.hero-banner h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 20px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.reviews {
+  padding: 40px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.review-card {
+  margin: 10px auto;
+  font-style: italic;
+}
