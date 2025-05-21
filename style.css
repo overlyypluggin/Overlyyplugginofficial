@@ -16,7 +16,10 @@ header {
 }
 
 header .logo {
-  height: 24px;  /* make the logo smaller */
+  height: 22px;   /* adjust to your taste */
+  max-height: 22px;
+  width: auto;
+}
 }
 }
 
