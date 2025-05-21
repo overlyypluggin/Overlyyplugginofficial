@@ -1,1 +1,43 @@
 <!-- Final version of the site with real images, product grid, banner, reviews -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overlyy Pluggin Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/images/logo.png" />
+</head>
+<body>
+  <header>
+    <img src="assets/images/logo.png" alt="Overlyy Pluggin Logo" class="logo" />
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Cart</a>
+    </nav>
+  </header>
+
+  <section class="hero-banner">
+    <h1>🔥 Weekly Deals: 20% Off Select Jordans 🔥</h1>
+    <p>New drops, fast shipping, Gen Z approved.</p>
+  </section>
+
+  <section class="product-grid">
+    <div class="product-card">
+      <img src="assets/images/air-jordan-1-unc-reimagined.jpg" alt="UNC Reimagined" />
+      <h3>AJ1 UNC Reimagined</h3>
+      <p>$180 — Sizes 7-13</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <h2>What Our Customers Say</h2>
+    <div class="review-card">“Fast shipping, legit kicks.” — Sierra R.</div>
+    <div class="review-card">“I’m locked in with Overlyy.” — Mike T.</div>
+    <div class="review-card">“10/10, every time.” — Zay S.</div>
+  </section>
+
+  <script src="cart.js"></script>
+</body>
+</html>
