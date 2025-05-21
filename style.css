@@ -131,7 +131,16 @@ nav a {
   font-size: 14px;
   white-space: nowrap;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.brand-slider a:hover {
+  background: #333;
+  transform: scale(1.07);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
 }
 
 .brand-slider a:hover {
