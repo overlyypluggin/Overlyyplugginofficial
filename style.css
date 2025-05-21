@@ -1,14 +1,49 @@
-.cart-badge {
-  background-color: red;
-  color: white;
-  padding: 2px 6px;
-  border-radius: 12px;
-  font-size: 12px;
-  vertical-align: top;
-  margin-left: 5px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  padding: 15px 30px;
 }
 .logo {
-  height: 35px;
-  width: auto;
-  margin-right: 10px;
+  height: 45px;
+}
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+.badge {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+}
+.product-grid {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.product-card img {
+  max-width: 100%;
+  margin-bottom: 10px;
 }
