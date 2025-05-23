@@ -1,511 +1,81 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Amiri - Overlyy Pluggin</title>
+  <title>Amiri - Overlyy</title>
   <style>
-    body { background: #0d0d0d; color: #fff; font-family: 'Segoe UI'; margin: 0; padding: 2rem; }
-    h1 { text-align: center; color: #f5c842; }
-    .controls { text-align: center; margin-bottom: 2rem; }
-    input, select { padding: 10px; margin: 5px; border-radius: 5px; border: none; }
-    .grid { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    body { background:#0d0d0d; color:white; font-family:Arial; padding:2rem; }
+    h1 { text-align:center; color:#f5c842; }
+    .grid { display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; }
     .card {
-      background: #111;
-      border: 1px solid #b5c96b;
-      border-radius: 8px;
-      padding: 1rem;
-      width: 200px;
-      text-align: center;
-      cursor: pointer;
+      background:#111; border:1px solid #b5c96b; padding:1rem; border-radius:10px;
+      width:200px; text-align:center;
+    }
+    .card img {
+      width:100%; height:150px; background:#000; margin-bottom:10px;
     }
     .modal {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.85);
-      justify-content: center;
-      align-items: center;
-      z-index: 999;
+      display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+      background:rgba(0,0,0,0.9); justify-content:center; align-items:center; z-index:9999;
     }
     .modal-content {
-      background: #1a1a1a;
-      padding: 2rem;
-      border-radius: 10px;
-      text-align: center;
-      max-width: 400px;
+      background:#1a1a1a; padding:2rem; border-radius:10px; text-align:center;
     }
+    .modal-content img { width:100%; border-radius:10px; }
     .modal-content button {
-      padding: 10px 20px;
-      background: #b5c96b;
-      border: none;
-      font-weight: bold;
-      margin-top: 1rem;
+      margin-top:1rem; padding:10px 20px; background:#b5c96b; border:none;
+      font-weight:bold; color:black; cursor:pointer;
     }
   </style>
 </head>
 <body>
-<div style='text-align:center;margin-bottom:20px;'>
-  <a href='index.html' style='color:#f5c842;text-decoration:none;font-weight:bold;'>&larr; Go Back Home</a>
+<div style="position:absolute;top:20px;right:20px;background:#b5c96b;color:black;padding:8px 12px;border-radius:8px;font-weight:bold;">
+  Cart: <span id="cart-count">0</span>
 </div>
 <h1>Amiri</h1>
-<div class="controls">
-  <input type="text" id="searchInput" placeholder="Search..." onkeyup="filterProducts()">
-  <select id="sizeFilter" onchange="filterProducts()">
-    <option value="">All Sizes</option>
-    <option value="6">6</option><option value="7">7</option><option value="8">8</option>
-    <option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option>
-  </select>
-  <select id="priceFilter" onchange="filterProducts()">
-    <option value="">All Prices</option>
-    <option value="low">Under $200</option>
-    <option value="mid">$200–$500</option>
-    <option value="high">Over $500</option>
-  </select>
+<div class="grid">
+  <div class="card">
+    <img src="amiri-skel.jpg">
+    <p>Amiri Skel Top Low</p>
+    <button onclick="openModal('Amiri Skel Top Low', 'amiri-skel.jpg', 620)">Preview</button>
+  </div>
 </div>
-<div class="grid" id="productGrid">
-
-  <div class="card" data-name="Amiri Bone Runner 'White'" data-price="850" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'White'</h3>
-    <p>$850</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'White'', 850, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'White Black'" data-price="349" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'White Black'</h3>
-    <p>$349</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'White Black'', 349, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Black'" data-price="618" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Black'</h3>
-    <p>$618</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Black'', 618, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Royal Blue'" data-price="380" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Royal Blue'</h3>
-    <p>$380</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Royal Blue'', 380, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Orange'" data-price="500" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Orange'</h3>
-    <p>$500</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Orange'', 500, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Mixed White'" data-price="500" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Mixed White'</h3>
-    <p>$500</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Mixed White'', 500, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Alabaster'" data-price="320" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Alabaster'</h3>
-    <p>$320</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Alabaster'', 320, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Warm Grey'" data-price="450" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Warm Grey'</h3>
-    <p>$450</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Warm Grey'', 450, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Blue & White'" data-price="634" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Blue & White'</h3>
-    <p>$634</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Blue & White'', 634, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'White Red & Grey'" data-price="634" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'White Red & Grey'</h3>
-    <p>$634</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'White Red & Grey'', 634, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Black and White'" data-price="675" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Black and White'</h3>
-    <p>$675</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Black and White'', 675, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Blue'" data-price="642" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Blue'</h3>
-    <p>$642</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Blue'', 642, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Red'" data-price="511" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Red'</h3>
-    <p>$511</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Red'', 511, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Tan Grey'" data-price="342" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Tan Grey'</h3>
-    <p>$342</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Tan Grey'', 342, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Baby Blue'" data-price="412" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Baby Blue'</h3>
-    <p>$412</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Baby Blue'', 412, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'White Red'" data-price="682" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'White Red'</h3>
-    <p>$682</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'White Red'', 682, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'White Black Teal'" data-price="441" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'White Black Teal'</h3>
-    <p>$441</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'White Black Teal'', 441, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Olive'" data-price="931" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Olive'</h3>
-    <p>$931</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Olive'', 931, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Grey Lime'" data-price="885" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Grey Lime'</h3>
-    <p>$885</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Grey Lime'', 885, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Alabaster Green'" data-price="885" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Alabaster Green'</h3>
-    <p>$885</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Alabaster Green'', 885, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'White Grey'" data-price="660" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'White Grey'</h3>
-    <p>$660</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'White Grey'', 660, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Off-White Black'" data-price="660" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Off-White Black'</h3>
-    <p>$660</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Off-White Black'', 660, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Pale Peach'" data-price="750" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Pale Peach'</h3>
-    <p>$750</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Pale Peach'', 750, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Stone Grey'" data-price="725" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Stone Grey'</h3>
-    <p>$725</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Stone Grey'', 725, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Bone Runner 'Black White'" data-price="511" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Bone Runner 'Black White'</h3>
-    <p>$511</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Bone Runner 'Black White'', 511, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top High 'Black Red'" data-price="511" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top High 'Black Red'</h3>
-    <p>$511</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top High 'Black Red'', 511, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top High 'Triple White'" data-price="391" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top High 'Triple White'</h3>
-    <p>$391</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top High 'Triple White'', 391, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top Low 'White Red'" data-price="1666" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top Low 'White Red'</h3>
-    <p>$1666</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top Low 'White Red'', 1666, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top Low 'Black White'" data-price="449" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top Low 'Black White'</h3>
-    <p>$449</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top Low 'Black White'', 449, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top Low 'White'" data-price="676" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top Low 'White'</h3>
-    <p>$676</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top Low 'White'', 676, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top Low 'Red White'" data-price="633" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top Low 'Red White'</h3>
-    <p>$633</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top Low 'Red White'', 633, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top Low 'Collegiate - Red White'" data-price="373" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top Low 'Collegiate - Red White'</h3>
-    <p>$373</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top Low 'Collegiate - Red White'', 373, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top Low 'White Lime'" data-price="382" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top Low 'White Lime'</h3>
-    <p>$382</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top Low 'White Lime'', 382, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top Low 'Black Grey'" data-price="757" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top Low 'Black Grey'</h3>
-    <p>$757</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top Low 'Black Grey'', 757, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top High 'White Black'" data-price="199" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top High 'White Black'</h3>
-    <p>$199</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top High 'White Black'', 199, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Sneakers 'All Black'" data-price="628.61" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Sneakers 'All Black'</h3>
-    <p>$628.61</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Sneakers 'All Black'', 628.61, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="MA Quad Skel-Top Low 'Black'" data-price="690" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>MA Quad Skel-Top Low 'Black'</h3>
-    <p>$690</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('MA Quad Skel-Top Low 'Black'', 690, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri 'Skel Top Low' Sneakers" data-price="279.99" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri 'Skel Top Low' Sneakers</h3>
-    <p>$279.99</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri 'Skel Top Low' Sneakers', 279.99, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Two-Tone Skel Top Sneaker" data-price="650" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Two-Tone Skel Top Sneaker</h3>
-    <p>$650</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Two-Tone Skel Top Sneaker', 650, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top Low Sneakers 'Black'" data-price="759" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top Low Sneakers 'Black'</h3>
-    <p>$759</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top Low Sneakers 'Black'', 759, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Two-Tone Leather Skel Sneakers" data-price="618" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Two-Tone Leather Skel Sneakers</h3>
-    <p>$618</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Two-Tone Leather Skel Sneakers', 618, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Ma Quad Skel Sneakers" data-price="299.99" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Ma Quad Skel Sneakers</h3>
-    <p>$299.99</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Ma Quad Skel Sneakers', 299.99, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Low Top Sneakers 'Asphalt'" data-price="299.99" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Low Top Sneakers 'Asphalt'</h3>
-    <p>$299.99</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Low Top Sneakers 'Asphalt'', 299.99, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top Sneakers" data-price="299.99" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top Sneakers</h3>
-    <p>$299.99</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top Sneakers', 299.99, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top Low 'White Orange'" data-price="956" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top Low 'White Orange'</h3>
-    <p>$956</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top Low 'White Orange'', 956, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top Low 'Double Grey'" data-price="541" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top Low 'Double Grey'</h3>
-    <p>$541</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top Low 'Double Grey'', 541, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top Low 'Teal Slate Blue'" data-price="639" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top Low 'Teal Slate Blue'</h3>
-    <p>$639</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top Low 'Teal Slate Blue'', 639, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top High 'Green Black'" data-price="430" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top High 'Green Black'</h3>
-    <p>$430</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top High 'Green Black'', 430, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top Low 'White Blue'" data-price="845" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top Low 'White Blue'</h3>
-    <p>$845</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top Low 'White Blue'', 845, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-  <div class="card" data-name="Amiri Skel Top Low 'Red'" data-price="820" data-sizes="7, 8, 9, 10, 11, 12, 13">
-    <div style='height:150px;background:#000;border:1px solid #333;margin-bottom:10px;'></div>
-<h3>Amiri Skel Top Low 'Red'</h3>
-    <p>$820</p>
-    <p class="stock">In Stock (10+)</p>
-    <button style='margin-top:8px;' onclick="openModal('Amiri Skel Top Low 'Red'', 820, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
-  </div>
-
-</div>
-<div class="modal" id="modal">
+<div class="modal" id="preview-modal">
   <div class="modal-content">
-    <h2 id="modalTitle"></h2>
-    <p id="modalPrice"></p>
-    <p id="modalSizes"></p>
-    <p id="modalStock"></p>
-    <p>Condition: Brand New / DS</p>
-    <button onclick="closeModal()">Close</button><br><button style='margin-top:5px;background:#f5c842;border:none;padding:8px;color:black;font-weight:bold;'>Add to Cart</button>
+    <img id="modal-img" src="">
+    <h2 id="modal-title"></h2>
+    <p id="modal-price" style="color:#f5c842;"></p>
+    <p>Condition: Brand New / Deadstock</p>
+    <button onclick="addToCart()">Add to Cart</button><br>
+    <button onclick="closeModal()" style="margin-top:10px;background:#333;color:white;">Close</button>
   </div>
 </div>
+
 <script>
-  function openModal(name, price, sizes, stock) {
-    document.getElementById("modal").style.display = "flex";
-    document.getElementById("modalTitle").innerText = name;
-    document.getElementById("modalPrice").innerText = "Price: $" + price;
-    document.getElementById("modalSizes").innerText = "Sizes: " + sizes;
-    document.getElementById("modalStock").innerText = stock;
+  let selectedItem = { name: "", price: 0 };
+  function openModal(name, img, price) {
+    selectedItem = { name, price };
+    document.getElementById("modal-title").innerText = name;
+    document.getElementById("modal-price").innerText = "$" + price;
+    document.getElementById("modal-img").src = img;
+    document.getElementById("preview-modal").style.display = "flex";
   }
-
   function closeModal() {
-    document.getElementById("modal").style.display = "none";
+    document.getElementById("preview-modal").style.display = "none";
   }
-
-  function filterProducts() {
-    const search = document.getElementById("searchInput").value.toLowerCase();
-    const size = document.getElementById("sizeFilter").value;
-    const price = document.getElementById("priceFilter").value;
-    const cards = document.querySelectorAll(".card");
-
-    cards.forEach(card => {
-      const name = card.dataset.name.toLowerCase();
-      const sizes = card.dataset.sizes.split(", ");
-      const priceVal = parseInt(card.dataset.price);
-      let show = name.includes(search);
-      if (size && !sizes.includes(size)) show = false;
-      if (price === "low" && priceVal >= 200) show = false;
-      if (price === "mid" && (priceVal < 200 || priceVal > 500)) show = false;
-      if (price === "high" && priceVal <= 500) show = false;
-      card.style.display = show ? "block" : "none";
-    });
+  function addToCart() {
+    let cart = JSON.parse(localStorage.getItem("cart") || "[]");
+    cart.push(selectedItem);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartCount();
+    closeModal();
   }
+  function updateCartCount() {
+    let cart = JSON.parse(localStorage.getItem("cart") || "[]");
+    document.getElementById("cart-count").innerText = cart.length;
+  }
+  updateCartCount();
 </script>
+
 </body>
 </html>
