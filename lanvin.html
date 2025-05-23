@@ -1,288 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lanvin - Overlyy Pluggin</title>
+  <link rel='stylesheet' href='style.css'>
+  <style>
+    body { font-family: sans-serif; margin: 0; background: #fff; }
+    header { background: #000; color: white; padding: 1rem; text-align: center; font-size: 1.5rem; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem; padding: 2rem; }
+    .product-card {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .product-card:hover { transform: translateY(-5px); }
+    .product-card img { max-width: 100%; border-radius: 6px; margin-bottom: 0.5rem; }
+    .product-name { font-weight: 600; margin: 0.5rem 0 0.25rem; }
+    .price { color: #333; font-size: 1.1rem; margin-bottom: 0.25rem; }
+    .sizes { font-size: 0.9rem; color: #666; }
+  </style>
+</head>
+<body>
+  <header>Lanvin</header>
+  <section class="product-grid">
 
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Lanvin - Overlyy Pluggin</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header><h1>Lanvin</h1></header>
-        <section class="product-grid">
-            
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Pale Pink</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - White</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Black</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Navy Blue</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Grey</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Beige</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Red</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Green</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Yellow</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Orange</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Purple</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Brown</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Light Blue</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Dark Green</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Maroon</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Teal</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Olive</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Mustard</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Coral</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Mint</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Lavender</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Sky Blue</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Charcoal</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Sand</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Wine</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Aqua</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Peach</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Lime</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Rose</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Cyan</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Amber</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Turquoise</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Plum</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Khaki</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Gold</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Silver</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Bronze</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Indigo</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Leather Curb Sneakers - Crimson</h3>
-            <p><strong>Model:</strong> Curb</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $990</p>
-        </div>
-        
-        </section>
-    </body>
-    </html>
-    
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Pale Pink">
+                <div class="product-name">Leather Curb Sneakers - Pale Pink</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - White">
+                <div class="product-name">Leather Curb Sneakers - White</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Black">
+                <div class="product-name">Leather Curb Sneakers - Black</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Navy Blue">
+                <div class="product-name">Leather Curb Sneakers - Navy Blue</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Grey">
+                <div class="product-name">Leather Curb Sneakers - Grey</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Beige">
+                <div class="product-name">Leather Curb Sneakers - Beige</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Red">
+                <div class="product-name">Leather Curb Sneakers - Red</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Green">
+                <div class="product-name">Leather Curb Sneakers - Green</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Yellow">
+                <div class="product-name">Leather Curb Sneakers - Yellow</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Orange">
+                <div class="product-name">Leather Curb Sneakers - Orange</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Purple">
+                <div class="product-name">Leather Curb Sneakers - Purple</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Brown">
+                <div class="product-name">Leather Curb Sneakers - Brown</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Light Blue">
+                <div class="product-name">Leather Curb Sneakers - Light Blue</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Dark Green">
+                <div class="product-name">Leather Curb Sneakers - Dark Green</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Maroon">
+                <div class="product-name">Leather Curb Sneakers - Maroon</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Teal">
+                <div class="product-name">Leather Curb Sneakers - Teal</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Olive">
+                <div class="product-name">Leather Curb Sneakers - Olive</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Mustard">
+                <div class="product-name">Leather Curb Sneakers - Mustard</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Coral">
+                <div class="product-name">Leather Curb Sneakers - Coral</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Mint">
+                <div class="product-name">Leather Curb Sneakers - Mint</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Lavender">
+                <div class="product-name">Leather Curb Sneakers - Lavender</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Sky Blue">
+                <div class="product-name">Leather Curb Sneakers - Sky Blue</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Charcoal">
+                <div class="product-name">Leather Curb Sneakers - Charcoal</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Sand">
+                <div class="product-name">Leather Curb Sneakers - Sand</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Wine">
+                <div class="product-name">Leather Curb Sneakers - Wine</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Aqua">
+                <div class="product-name">Leather Curb Sneakers - Aqua</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Peach">
+                <div class="product-name">Leather Curb Sneakers - Peach</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Lime">
+                <div class="product-name">Leather Curb Sneakers - Lime</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Rose">
+                <div class="product-name">Leather Curb Sneakers - Rose</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Cyan">
+                <div class="product-name">Leather Curb Sneakers - Cyan</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Amber">
+                <div class="product-name">Leather Curb Sneakers - Amber</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Turquoise">
+                <div class="product-name">Leather Curb Sneakers - Turquoise</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Plum">
+                <div class="product-name">Leather Curb Sneakers - Plum</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Khaki">
+                <div class="product-name">Leather Curb Sneakers - Khaki</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Gold">
+                <div class="product-name">Leather Curb Sneakers - Gold</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Silver">
+                <div class="product-name">Leather Curb Sneakers - Silver</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Bronze">
+                <div class="product-name">Leather Curb Sneakers - Bronze</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Indigo">
+                <div class="product-name">Leather Curb Sneakers - Indigo</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Leather Curb Sneakers - Crimson">
+                <div class="product-name">Leather Curb Sneakers - Crimson</div>
+                <div class="price">$990</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+  </section>
+</body>
+</html>

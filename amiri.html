@@ -1,365 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amiri - Overlyy Pluggin</title>
+  <link rel='stylesheet' href='style.css'>
+  <style>
+    body { font-family: sans-serif; margin: 0; background: #fff; }
+    header { background: #000; color: white; padding: 1rem; text-align: center; font-size: 1.5rem; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem; padding: 2rem; }
+    .product-card {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .product-card:hover { transform: translateY(-5px); }
+    .product-card img { max-width: 100%; border-radius: 6px; margin-bottom: 0.5rem; }
+    .product-name { font-weight: 600; margin: 0.5rem 0 0.25rem; }
+    .price { color: #333; font-size: 1.1rem; margin-bottom: 0.25rem; }
+    .sizes { font-size: 0.9rem; color: #666; }
+  </style>
+</head>
+<body>
+  <header>Amiri</header>
+  <section class="product-grid">
 
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Amiri - Overlyy Pluggin</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header><h1>Amiri</h1></header>
-        <section class="product-grid">
-            
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'White'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $850</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'White Black'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $349</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Black'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $618</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Royal Blue'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $380</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Orange'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $500</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Mixed White'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $500</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Alabaster'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $320</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Warm Grey'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $450</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Blue & White'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $634</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'White Red & Grey'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $634</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Black and White'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $675</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Blue'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $642</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Red'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $511</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Tan Grey'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $342</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Baby Blue'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $412</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'White Red'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $682</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'White Black Teal'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $441</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Olive'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $931</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Grey Lime'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $885</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Alabaster Green'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $885</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'White Grey'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $660</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Off-White Black'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $660</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Pale Peach'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $750</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Stone Grey'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $725</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Bone Runner 'Black White'</h3>
-            <p><strong>Model:</strong> Bone Runner</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $511</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top High 'Black Red'</h3>
-            <p><strong>Model:</strong> Skel Top High</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $511</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top High 'Triple White'</h3>
-            <p><strong>Model:</strong> Skel Top High</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $391</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top Low 'White Red'</h3>
-            <p><strong>Model:</strong> Skel Top Low</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $1666</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top Low 'Black White'</h3>
-            <p><strong>Model:</strong> Skel Top Low</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $449</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top Low 'White'</h3>
-            <p><strong>Model:</strong> Skel Top Low</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $676</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top Low 'Red White'</h3>
-            <p><strong>Model:</strong> Skel Top Low</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $633</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top Low 'Collegiate - Red White'</h3>
-            <p><strong>Model:</strong> Skel Top Low</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $373</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top Low 'White Lime'</h3>
-            <p><strong>Model:</strong> Skel Top Low</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $382</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top Low 'Black Grey'</h3>
-            <p><strong>Model:</strong> Skel Top Low</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $757</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top High 'White Black'</h3>
-            <p><strong>Model:</strong> Skel Top High</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $199</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Sneakers 'All Black'</h3>
-            <p><strong>Model:</strong> Skel Sneakers</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $628.61</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>MA Quad Skel-Top Low 'Black'</h3>
-            <p><strong>Model:</strong> MA Quad Skel-Top Low</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $690</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri 'Skel Top Low' Sneakers</h3>
-            <p><strong>Model:</strong> Skel Top Low</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $279.99</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Two-Tone Skel Top Sneaker</h3>
-            <p><strong>Model:</strong> Two-Tone Skel Top</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $650</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top Low Sneakers 'Black'</h3>
-            <p><strong>Model:</strong> Skel Top Low</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $759</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Two-Tone Leather Skel Sneakers</h3>
-            <p><strong>Model:</strong> Two-Tone Leather Skel</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $618</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Ma Quad Skel Sneakers</h3>
-            <p><strong>Model:</strong> Ma Quad Skel</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $299.99</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Low Top Sneakers 'Asphalt'</h3>
-            <p><strong>Model:</strong> Skel Low Top</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $299.99</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top Sneakers</h3>
-            <p><strong>Model:</strong> Skel Top</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $299.99</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top Low 'White Orange'</h3>
-            <p><strong>Model:</strong> Skel Top Low</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $956</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top Low 'Double Grey'</h3>
-            <p><strong>Model:</strong> Skel Top Low</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $541</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top Low 'Teal Slate Blue'</h3>
-            <p><strong>Model:</strong> Skel Top Low</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $639</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top High 'Green Black'</h3>
-            <p><strong>Model:</strong> Skel Top High</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $430</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top Low 'White Blue'</h3>
-            <p><strong>Model:</strong> Skel Top Low</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $845</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Amiri Skel Top Low 'Red'</h3>
-            <p><strong>Model:</strong> Skel Top Low</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $820</p>
-        </div>
-        
-        </section>
-    </body>
-    </html>
-    
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'White'">
+                <div class="product-name">Amiri Bone Runner 'White'</div>
+                <div class="price">$850</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'White Black'">
+                <div class="product-name">Amiri Bone Runner 'White Black'</div>
+                <div class="price">$349</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Black'">
+                <div class="product-name">Amiri Bone Runner 'Black'</div>
+                <div class="price">$618</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Royal Blue'">
+                <div class="product-name">Amiri Bone Runner 'Royal Blue'</div>
+                <div class="price">$380</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Orange'">
+                <div class="product-name">Amiri Bone Runner 'Orange'</div>
+                <div class="price">$500</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Mixed White'">
+                <div class="product-name">Amiri Bone Runner 'Mixed White'</div>
+                <div class="price">$500</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Alabaster'">
+                <div class="product-name">Amiri Bone Runner 'Alabaster'</div>
+                <div class="price">$320</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Warm Grey'">
+                <div class="product-name">Amiri Bone Runner 'Warm Grey'</div>
+                <div class="price">$450</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Blue & White'">
+                <div class="product-name">Amiri Bone Runner 'Blue & White'</div>
+                <div class="price">$634</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'White Red & Grey'">
+                <div class="product-name">Amiri Bone Runner 'White Red & Grey'</div>
+                <div class="price">$634</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Black and White'">
+                <div class="product-name">Amiri Bone Runner 'Black and White'</div>
+                <div class="price">$675</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Blue'">
+                <div class="product-name">Amiri Bone Runner 'Blue'</div>
+                <div class="price">$642</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Red'">
+                <div class="product-name">Amiri Bone Runner 'Red'</div>
+                <div class="price">$511</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Tan Grey'">
+                <div class="product-name">Amiri Bone Runner 'Tan Grey'</div>
+                <div class="price">$342</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Baby Blue'">
+                <div class="product-name">Amiri Bone Runner 'Baby Blue'</div>
+                <div class="price">$412</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'White Red'">
+                <div class="product-name">Amiri Bone Runner 'White Red'</div>
+                <div class="price">$682</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'White Black Teal'">
+                <div class="product-name">Amiri Bone Runner 'White Black Teal'</div>
+                <div class="price">$441</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Olive'">
+                <div class="product-name">Amiri Bone Runner 'Olive'</div>
+                <div class="price">$931</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Grey Lime'">
+                <div class="product-name">Amiri Bone Runner 'Grey Lime'</div>
+                <div class="price">$885</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Alabaster Green'">
+                <div class="product-name">Amiri Bone Runner 'Alabaster Green'</div>
+                <div class="price">$885</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'White Grey'">
+                <div class="product-name">Amiri Bone Runner 'White Grey'</div>
+                <div class="price">$660</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Off-White Black'">
+                <div class="product-name">Amiri Bone Runner 'Off-White Black'</div>
+                <div class="price">$660</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Pale Peach'">
+                <div class="product-name">Amiri Bone Runner 'Pale Peach'</div>
+                <div class="price">$750</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Stone Grey'">
+                <div class="product-name">Amiri Bone Runner 'Stone Grey'</div>
+                <div class="price">$725</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Bone Runner 'Black White'">
+                <div class="product-name">Amiri Bone Runner 'Black White'</div>
+                <div class="price">$511</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top High 'Black Red'">
+                <div class="product-name">Amiri Skel Top High 'Black Red'</div>
+                <div class="price">$511</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top High 'Triple White'">
+                <div class="product-name">Amiri Skel Top High 'Triple White'</div>
+                <div class="price">$391</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top Low 'White Red'">
+                <div class="product-name">Amiri Skel Top Low 'White Red'</div>
+                <div class="price">$1666</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top Low 'Black White'">
+                <div class="product-name">Amiri Skel Top Low 'Black White'</div>
+                <div class="price">$449</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top Low 'White'">
+                <div class="product-name">Amiri Skel Top Low 'White'</div>
+                <div class="price">$676</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top Low 'Red White'">
+                <div class="product-name">Amiri Skel Top Low 'Red White'</div>
+                <div class="price">$633</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top Low 'Collegiate - Red White'">
+                <div class="product-name">Amiri Skel Top Low 'Collegiate - Red White'</div>
+                <div class="price">$373</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top Low 'White Lime'">
+                <div class="product-name">Amiri Skel Top Low 'White Lime'</div>
+                <div class="price">$382</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top Low 'Black Grey'">
+                <div class="product-name">Amiri Skel Top Low 'Black Grey'</div>
+                <div class="price">$757</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top High 'White Black'">
+                <div class="product-name">Amiri Skel Top High 'White Black'</div>
+                <div class="price">$199</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Sneakers 'All Black'">
+                <div class="product-name">Amiri Skel Sneakers 'All Black'</div>
+                <div class="price">$628.61</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="MA Quad Skel-Top Low 'Black'">
+                <div class="product-name">MA Quad Skel-Top Low 'Black'</div>
+                <div class="price">$690</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri 'Skel Top Low' Sneakers">
+                <div class="product-name">Amiri 'Skel Top Low' Sneakers</div>
+                <div class="price">$279.99</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Two-Tone Skel Top Sneaker">
+                <div class="product-name">Amiri Two-Tone Skel Top Sneaker</div>
+                <div class="price">$650</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top Low Sneakers 'Black'">
+                <div class="product-name">Amiri Skel Top Low Sneakers 'Black'</div>
+                <div class="price">$759</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Two-Tone Leather Skel Sneakers">
+                <div class="product-name">Amiri Two-Tone Leather Skel Sneakers</div>
+                <div class="price">$618</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Ma Quad Skel Sneakers">
+                <div class="product-name">Amiri Ma Quad Skel Sneakers</div>
+                <div class="price">$299.99</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Low Top Sneakers 'Asphalt'">
+                <div class="product-name">Amiri Skel Low Top Sneakers 'Asphalt'</div>
+                <div class="price">$299.99</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top Sneakers">
+                <div class="product-name">Amiri Skel Top Sneakers</div>
+                <div class="price">$299.99</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top Low 'White Orange'">
+                <div class="product-name">Amiri Skel Top Low 'White Orange'</div>
+                <div class="price">$956</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top Low 'Double Grey'">
+                <div class="product-name">Amiri Skel Top Low 'Double Grey'</div>
+                <div class="price">$541</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top Low 'Teal Slate Blue'">
+                <div class="product-name">Amiri Skel Top Low 'Teal Slate Blue'</div>
+                <div class="price">$639</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top High 'Green Black'">
+                <div class="product-name">Amiri Skel Top High 'Green Black'</div>
+                <div class="price">$430</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top Low 'White Blue'">
+                <div class="product-name">Amiri Skel Top Low 'White Blue'</div>
+                <div class="price">$845</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Amiri Skel Top Low 'Red'">
+                <div class="product-name">Amiri Skel Top Low 'Red'</div>
+                <div class="price">$820</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+  </section>
+</body>
+</html>

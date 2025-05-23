@@ -1,260 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BAPE - Overlyy Pluggin</title>
+  <link rel='stylesheet' href='style.css'>
+  <style>
+    body { font-family: sans-serif; margin: 0; background: #fff; }
+    header { background: #000; color: white; padding: 1rem; text-align: center; font-size: 1.5rem; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem; padding: 2rem; }
+    .product-card {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .product-card:hover { transform: translateY(-5px); }
+    .product-card img { max-width: 100%; border-radius: 6px; margin-bottom: 0.5rem; }
+    .product-name { font-weight: 600; margin: 0.5rem 0 0.25rem; }
+    .price { color: #333; font-size: 1.1rem; margin-bottom: 0.25rem; }
+    .sizes { font-size: 0.9rem; color: #666; }
+  </style>
+</head>
+<body>
+  <header>BAPE</header>
+  <section class="product-grid">
 
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>BAPE - Overlyy Pluggin</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header><h1>BAPE</h1></header>
-        <section class="product-grid">
-            
-        <div class="product-card">
-            <h3>BAPE STA #3 MENS</h3>
-            <p><strong>Model:</strong> BAPE STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $309</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE STA #3 LADIES</h3>
-            <p><strong>Model:</strong> BAPE STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $299</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE STA ICON MENS</h3>
-            <p><strong>Model:</strong> BAPE STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $309</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE STA ICON LADIES</h3>
-            <p><strong>Model:</strong> BAPE STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $299</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE STA #2 MENS</h3>
-            <p><strong>Model:</strong> BAPE STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $239</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE STA #5 MENS</h3>
-            <p><strong>Model:</strong> BAPE STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $309</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE STA BAPE X STADIUM GOODS MENS</h3>
-            <p><strong>Model:</strong> BAPE STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $299</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE STA BAPE X STADIUM GOODS LADIES</h3>
-            <p><strong>Model:</strong> BAPE STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $299</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE STA PEARL GOAT MENS</h3>
-            <p><strong>Model:</strong> BAPE STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $339</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE STA ICON #1 MENS</h3>
-            <p><strong>Model:</strong> BAPE STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $329</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA #1 MENS</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $329</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA #1 LADIES</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $247</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA #3 MENS</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $247</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE CROSS STA MENS</h3>
-            <p><strong>Model:</strong> BAPE CROSS STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $329</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA #2 M1</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $376</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA #6</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $376</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA #2</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $459</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA #5</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $361</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA #4 M1</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $961</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA #2 M2</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $773</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA #3 M1 White</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $383</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA #1 L Blue</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $601</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA Leather</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $734</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA Camouflage Panel</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $758</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA Paneled</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $734</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA Special Edition</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $306</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA Premium</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $361</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA Deluxe</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $1999</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA Urban Camo</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $773</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA Classic</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $361</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA Neon</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $499</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA Reflective</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $699</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA Suede Pack</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $412</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA Vintage</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $533</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>BAPE SK8 STA All-White</h3>
-            <p><strong>Model:</strong> BAPE SK8 STA</p>
-            <p><strong>Sizes:</strong> 7, 8, 9, 10, 11, 12, 13</p>
-            <p><strong>Price:</strong> $688</p>
-        </div>
-        
-        </section>
-    </body>
-    </html>
-    
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE STA #3 MENS">
+                <div class="product-name">BAPE STA #3 MENS</div>
+                <div class="price">$309</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE STA #3 LADIES">
+                <div class="product-name">BAPE STA #3 LADIES</div>
+                <div class="price">$299</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE STA ICON MENS">
+                <div class="product-name">BAPE STA ICON MENS</div>
+                <div class="price">$309</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE STA ICON LADIES">
+                <div class="product-name">BAPE STA ICON LADIES</div>
+                <div class="price">$299</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE STA #2 MENS">
+                <div class="product-name">BAPE STA #2 MENS</div>
+                <div class="price">$239</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE STA #5 MENS">
+                <div class="product-name">BAPE STA #5 MENS</div>
+                <div class="price">$309</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE STA BAPE X STADIUM GOODS MENS">
+                <div class="product-name">BAPE STA BAPE X STADIUM GOODS MENS</div>
+                <div class="price">$299</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE STA BAPE X STADIUM GOODS LADIES">
+                <div class="product-name">BAPE STA BAPE X STADIUM GOODS LADIES</div>
+                <div class="price">$299</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE STA PEARL GOAT MENS">
+                <div class="product-name">BAPE STA PEARL GOAT MENS</div>
+                <div class="price">$339</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE STA ICON #1 MENS">
+                <div class="product-name">BAPE STA ICON #1 MENS</div>
+                <div class="price">$329</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA #1 MENS">
+                <div class="product-name">BAPE SK8 STA #1 MENS</div>
+                <div class="price">$329</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA #1 LADIES">
+                <div class="product-name">BAPE SK8 STA #1 LADIES</div>
+                <div class="price">$247</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA #3 MENS">
+                <div class="product-name">BAPE SK8 STA #3 MENS</div>
+                <div class="price">$247</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE CROSS STA MENS">
+                <div class="product-name">BAPE CROSS STA MENS</div>
+                <div class="price">$329</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA #2 M1">
+                <div class="product-name">BAPE SK8 STA #2 M1</div>
+                <div class="price">$376</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA #6">
+                <div class="product-name">BAPE SK8 STA #6</div>
+                <div class="price">$376</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA #2">
+                <div class="product-name">BAPE SK8 STA #2</div>
+                <div class="price">$459</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA #5">
+                <div class="product-name">BAPE SK8 STA #5</div>
+                <div class="price">$361</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA #4 M1">
+                <div class="product-name">BAPE SK8 STA #4 M1</div>
+                <div class="price">$961</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA #2 M2">
+                <div class="product-name">BAPE SK8 STA #2 M2</div>
+                <div class="price">$773</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA #3 M1 White">
+                <div class="product-name">BAPE SK8 STA #3 M1 White</div>
+                <div class="price">$383</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA #1 L Blue">
+                <div class="product-name">BAPE SK8 STA #1 L Blue</div>
+                <div class="price">$601</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA Leather">
+                <div class="product-name">BAPE SK8 STA Leather</div>
+                <div class="price">$734</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA Camouflage Panel">
+                <div class="product-name">BAPE SK8 STA Camouflage Panel</div>
+                <div class="price">$758</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA Paneled">
+                <div class="product-name">BAPE SK8 STA Paneled</div>
+                <div class="price">$734</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA Special Edition">
+                <div class="product-name">BAPE SK8 STA Special Edition</div>
+                <div class="price">$306</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA Premium">
+                <div class="product-name">BAPE SK8 STA Premium</div>
+                <div class="price">$361</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA Deluxe">
+                <div class="product-name">BAPE SK8 STA Deluxe</div>
+                <div class="price">$1999</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA Urban Camo">
+                <div class="product-name">BAPE SK8 STA Urban Camo</div>
+                <div class="price">$773</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA Classic">
+                <div class="product-name">BAPE SK8 STA Classic</div>
+                <div class="price">$361</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA Neon">
+                <div class="product-name">BAPE SK8 STA Neon</div>
+                <div class="price">$499</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA Reflective">
+                <div class="product-name">BAPE SK8 STA Reflective</div>
+                <div class="price">$699</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA Suede Pack">
+                <div class="product-name">BAPE SK8 STA Suede Pack</div>
+                <div class="price">$412</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA Vintage">
+                <div class="product-name">BAPE SK8 STA Vintage</div>
+                <div class="price">$533</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="BAPE SK8 STA All-White">
+                <div class="product-name">BAPE SK8 STA All-White</div>
+                <div class="price">$688</div>
+                <div class="sizes">Sizes: 7, 8, 9, 10, 11, 12, 13</div>
+            </div>
+  </section>
+</body>
+</html>

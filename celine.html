@@ -1,50 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Celine - Overlyy Pluggin</title>
+  <link rel='stylesheet' href='style.css'>
+  <style>
+    body { font-family: sans-serif; margin: 0; background: #fff; }
+    header { background: #000; color: white; padding: 1rem; text-align: center; font-size: 1.5rem; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem; padding: 2rem; }
+    .product-card {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .product-card:hover { transform: translateY(-5px); }
+    .product-card img { max-width: 100%; border-radius: 6px; margin-bottom: 0.5rem; }
+    .product-name { font-weight: 600; margin: 0.5rem 0 0.25rem; }
+    .price { color: #333; font-size: 1.1rem; margin-bottom: 0.25rem; }
+    .sizes { font-size: 0.9rem; color: #666; }
+  </style>
+</head>
+<body>
+  <header>Celine</header>
+  <section class="product-grid">
 
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Celine - Overlyy Pluggin</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header><h1>Celine</h1></header>
-        <section class="product-grid">
-            
-        <div class="product-card">
-            <h3>Teen Celine Lulu</h3>
-            <p><strong>Model:</strong> Grained Calfskin</p>
-            <p><strong>Sizes:</strong> 8 x 6 x 2.5 inches</p>
-            <p><strong>Price:</strong> $1850</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Teen Celine Lulu</h3>
-            <p><strong>Model:</strong> Triomphe Canvas and Calfskin</p>
-            <p><strong>Sizes:</strong> 8 x 6 x 2.5 inches</p>
-            <p><strong>Price:</strong> $1600</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Large Cabas</h3>
-            <p><strong>Model:</strong> Textile with Anchor Embroidery and Calfskin</p>
-            <p><strong>Sizes:</strong> 15 x 13 x 6 inches</p>
-            <p><strong>Price:</strong> $2450</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Classic Panier Shopper Cabas</h3>
-            <p><strong>Model:</strong> Raffia and Calfskin</p>
-            <p><strong>Sizes:</strong> 15 x 13 x 6 inches</p>
-            <p><strong>Price:</strong> $2300</p>
-        </div>
-        
-        <div class="product-card">
-            <h3>Cabas Triangle</h3>
-            <p><strong>Model:</strong> Raffia and Calfskin</p>
-            <p><strong>Sizes:</strong> 15 x 13 x 6 inches</p>
-            <p><strong>Price:</strong> $2500</p>
-        </div>
-        
-        </section>
-    </body>
-    </html>
-    
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Teen Celine Lulu">
+                <div class="product-name">Teen Celine Lulu</div>
+                <div class="price">$1850</div>
+                <div class="sizes">Sizes: 8 x 6 x 2.5 inches</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Teen Celine Lulu">
+                <div class="product-name">Teen Celine Lulu</div>
+                <div class="price">$1600</div>
+                <div class="sizes">Sizes: 8 x 6 x 2.5 inches</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Large Cabas">
+                <div class="product-name">Large Cabas</div>
+                <div class="price">$2450</div>
+                <div class="sizes">Sizes: 15 x 13 x 6 inches</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Classic Panier Shopper Cabas">
+                <div class="product-name">Classic Panier Shopper Cabas</div>
+                <div class="price">$2300</div>
+                <div class="sizes">Sizes: 15 x 13 x 6 inches</div>
+            </div>
+            <div class="product-card">
+                <img src="sample-shoe.jpg" alt="Cabas Triangle">
+                <div class="product-name">Cabas Triangle</div>
+                <div class="price">$2500</div>
+                <div class="sizes">Sizes: 15 x 13 x 6 inches</div>
+            </div>
+  </section>
+</body>
+</html>
