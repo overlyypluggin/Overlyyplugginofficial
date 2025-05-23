@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,10 +16,6 @@
       width: 200px;
       text-align: center;
       cursor: pointer;
-    }
-    .stock {
-      font-size: 0.9rem;
-      margin-top: 5px;
     }
     .modal {
       display: none;
@@ -55,52 +50,262 @@
   <select id="sizeFilter" onchange="filterProducts()">
     <option value="">All Sizes</option>
     <option value="6">6</option><option value="7">7</option><option value="8">8</option>
-    <option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+    <option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option>
   </select>
   <select id="priceFilter" onchange="filterProducts()">
     <option value="">All Prices</option>
-    <option value="low">Under $900</option>
-    <option value="mid">$900–$1000</option>
-    <option value="high">Over $1000</option>
+    <option value="low">Under $200</option>
+    <option value="mid">$200–$500</option>
+    <option value="high">Over $500</option>
   </select>
 </div>
 <div class="grid" id="productGrid">
 
-    <div class="card" data-name="Bape Track Black" data-price="820" data-sizes="7, 8, 9, 10, 11">
-      <h3>Bape Track Black</h3>
-      <p>$820</p>
-      <p class="stock">In Stock (3 left)</p>
-      <button onclick="openModal('Bape Track Black', 820, '7, 8, 9, 10, 11', 'In Stock (3 left)')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Bape Triple S Cream" data-price="975" data-sizes="6, 7, 8, 9">
-      <h3>Bape Triple S Cream</h3>
-      <p>$975</p>
-      <p class="stock">In Stock (2 left)</p>
-      <button onclick="openModal('Bape Triple S Cream', 975, '6, 7, 8, 9', 'In Stock (2 left)')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Bape Runner White" data-price="1050" data-sizes="8, 9, 10, 11, 12">
-      <h3>Bape Runner White</h3>
-      <p>$1050</p>
-      <p class="stock">In Stock (5 left)</p>
-      <button onclick="openModal('Bape Runner White', 1050, '8, 9, 10, 11, 12', 'In Stock (5 left)')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Bape Speed 2.0 Black" data-price="895" data-sizes="7, 8, 9">
-      <h3>Bape Speed 2.0 Black</h3>
-      <p>$895</p>
-      <p class="stock">Sold Out</p>
-      <button onclick="openModal('Bape Speed 2.0 Black', 895, '7, 8, 9', 'Sold Out')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Bape Track Clear Sole" data-price="860" data-sizes="9, 10, 11">
-      <h3>Bape Track Clear Sole</h3>
-      <p>$860</p>
-      <p class="stock">In Stock (4 left)</p>
-      <button onclick="openModal('Bape Track Clear Sole', 860, '9, 10, 11', 'In Stock (4 left)')">Preview</button>
-    </div>
-    
+  <div class="card" data-name="BAPE STA #3 MENS" data-price="309" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE STA #3 MENS</h3>
+    <p>$309</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE STA #3 MENS', 309, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE STA #3 LADIES" data-price="299" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE STA #3 LADIES</h3>
+    <p>$299</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE STA #3 LADIES', 299, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE STA ICON MENS" data-price="309" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE STA ICON MENS</h3>
+    <p>$309</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE STA ICON MENS', 309, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE STA ICON LADIES" data-price="299" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE STA ICON LADIES</h3>
+    <p>$299</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE STA ICON LADIES', 299, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE STA #2 MENS" data-price="239" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE STA #2 MENS</h3>
+    <p>$239</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE STA #2 MENS', 239, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE STA #5 MENS" data-price="309" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE STA #5 MENS</h3>
+    <p>$309</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE STA #5 MENS', 309, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE STA BAPE X STADIUM GOODS MENS" data-price="299" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE STA BAPE X STADIUM GOODS MENS</h3>
+    <p>$299</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE STA BAPE X STADIUM GOODS MENS', 299, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE STA BAPE X STADIUM GOODS LADIES" data-price="299" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE STA BAPE X STADIUM GOODS LADIES</h3>
+    <p>$299</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE STA BAPE X STADIUM GOODS LADIES', 299, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE STA PEARL GOAT MENS" data-price="339" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE STA PEARL GOAT MENS</h3>
+    <p>$339</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE STA PEARL GOAT MENS', 339, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE STA ICON #1 MENS" data-price="329" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE STA ICON #1 MENS</h3>
+    <p>$329</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE STA ICON #1 MENS', 329, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA #1 MENS" data-price="329" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA #1 MENS</h3>
+    <p>$329</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA #1 MENS', 329, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA #1 LADIES" data-price="247" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA #1 LADIES</h3>
+    <p>$247</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA #1 LADIES', 247, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA #3 MENS" data-price="247" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA #3 MENS</h3>
+    <p>$247</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA #3 MENS', 247, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE CROSS STA MENS" data-price="329" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE CROSS STA MENS</h3>
+    <p>$329</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE CROSS STA MENS', 329, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA #2 M1" data-price="376" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA #2 M1</h3>
+    <p>$376</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA #2 M1', 376, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA #6" data-price="376" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA #6</h3>
+    <p>$376</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA #6', 376, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA #2" data-price="459" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA #2</h3>
+    <p>$459</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA #2', 459, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA #5" data-price="361" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA #5</h3>
+    <p>$361</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA #5', 361, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA #4 M1" data-price="961" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA #4 M1</h3>
+    <p>$961</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA #4 M1', 961, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA #2 M2" data-price="773" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA #2 M2</h3>
+    <p>$773</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA #2 M2', 773, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA #3 M1 White" data-price="383" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA #3 M1 White</h3>
+    <p>$383</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA #3 M1 White', 383, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA #1 L Blue" data-price="601" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA #1 L Blue</h3>
+    <p>$601</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA #1 L Blue', 601, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA Leather" data-price="734" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA Leather</h3>
+    <p>$734</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA Leather', 734, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA Camouflage Panel" data-price="758" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA Camouflage Panel</h3>
+    <p>$758</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA Camouflage Panel', 758, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA Paneled" data-price="734" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA Paneled</h3>
+    <p>$734</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA Paneled', 734, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA Special Edition" data-price="306" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA Special Edition</h3>
+    <p>$306</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA Special Edition', 306, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA Premium" data-price="361" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA Premium</h3>
+    <p>$361</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA Premium', 361, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA Deluxe" data-price="1999" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA Deluxe</h3>
+    <p>$1999</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA Deluxe', 1999, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA Urban Camo" data-price="773" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA Urban Camo</h3>
+    <p>$773</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA Urban Camo', 773, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA Classic" data-price="361" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA Classic</h3>
+    <p>$361</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA Classic', 361, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA Neon" data-price="499" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA Neon</h3>
+    <p>$499</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA Neon', 499, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA Reflective" data-price="699" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA Reflective</h3>
+    <p>$699</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA Reflective', 699, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA Suede Pack" data-price="412" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA Suede Pack</h3>
+    <p>$412</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA Suede Pack', 412, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA Vintage" data-price="533" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA Vintage</h3>
+    <p>$533</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA Vintage', 533, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="BAPE SK8 STA All-White" data-price="688" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>BAPE SK8 STA All-White</h3>
+    <p>$688</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('BAPE SK8 STA All-White', 688, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
 </div>
 <div class="modal" id="modal">
   <div class="modal-content">
@@ -137,9 +342,9 @@
       const priceVal = parseInt(card.dataset.price);
       let show = name.includes(search);
       if (size && !sizes.includes(size)) show = false;
-      if (price === "low" && priceVal >= 900) show = false;
-      if (price === "mid" && (priceVal < 900 || priceVal > 1000)) show = false;
-      if (price === "high" && priceVal <= 1000) show = false;
+      if (price === "low" && priceVal >= 200) show = false;
+      if (price === "mid" && (priceVal < 200 || priceVal > 500)) show = false;
+      if (price === "high" && priceVal <= 500) show = false;
       card.style.display = show ? "block" : "none";
     });
   }

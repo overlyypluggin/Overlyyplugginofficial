@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,10 +16,6 @@
       width: 200px;
       text-align: center;
       cursor: pointer;
-    }
-    .stock {
-      font-size: 0.9rem;
-      margin-top: 5px;
     }
     .modal {
       display: none;
@@ -55,52 +50,472 @@
   <select id="sizeFilter" onchange="filterProducts()">
     <option value="">All Sizes</option>
     <option value="6">6</option><option value="7">7</option><option value="8">8</option>
-    <option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+    <option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option>
   </select>
   <select id="priceFilter" onchange="filterProducts()">
     <option value="">All Prices</option>
-    <option value="low">Under $900</option>
-    <option value="mid">$900–$1000</option>
-    <option value="high">Over $1000</option>
+    <option value="low">Under $200</option>
+    <option value="mid">$200–$500</option>
+    <option value="high">Over $500</option>
   </select>
 </div>
 <div class="grid" id="productGrid">
 
-    <div class="card" data-name="Balenciaga Track Black" data-price="820" data-sizes="7, 8, 9, 10, 11">
-      <h3>Balenciaga Track Black</h3>
-      <p>$820</p>
-      <p class="stock">In Stock (3 left)</p>
-      <button onclick="openModal('Balenciaga Track Black', 820, '7, 8, 9, 10, 11', 'In Stock (3 left)')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Balenciaga Triple S Cream" data-price="975" data-sizes="6, 7, 8, 9">
-      <h3>Balenciaga Triple S Cream</h3>
-      <p>$975</p>
-      <p class="stock">In Stock (2 left)</p>
-      <button onclick="openModal('Balenciaga Triple S Cream', 975, '6, 7, 8, 9', 'In Stock (2 left)')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Balenciaga Runner White" data-price="1050" data-sizes="8, 9, 10, 11, 12">
-      <h3>Balenciaga Runner White</h3>
-      <p>$1050</p>
-      <p class="stock">In Stock (5 left)</p>
-      <button onclick="openModal('Balenciaga Runner White', 1050, '8, 9, 10, 11, 12', 'In Stock (5 left)')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Balenciaga Speed 2.0 Black" data-price="895" data-sizes="7, 8, 9">
-      <h3>Balenciaga Speed 2.0 Black</h3>
-      <p>$895</p>
-      <p class="stock">Sold Out</p>
-      <button onclick="openModal('Balenciaga Speed 2.0 Black', 895, '7, 8, 9', 'Sold Out')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Balenciaga Track Clear Sole" data-price="860" data-sizes="9, 10, 11">
-      <h3>Balenciaga Track Clear Sole</h3>
-      <p>$860</p>
-      <p class="stock">In Stock (4 left)</p>
-      <button onclick="openModal('Balenciaga Track Clear Sole', 860, '9, 10, 11', 'In Stock (4 left)')">Preview</button>
-    </div>
-    
+  <div class="card" data-name="Balenciaga Track.2 Pink Green (Women's)" data-price="895" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track.2 Pink Green (Women's)</h3>
+    <p>$895</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track.2 Pink Green (Women's)', 895, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track 2.0 Blue White (Men's)" data-price="995" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track 2.0 Blue White (Men's)</h3>
+    <p>$995</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track 2.0 Blue White (Men's)', 995, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track.2 Purple (Women's)" data-price="795" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track.2 Purple (Women's)</h3>
+    <p>$795</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track.2 Purple (Women's)', 795, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track.2 Blue Grey (Men's)" data-price="895" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track.2 Blue Grey (Men's)</h3>
+    <p>$895</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track.2 Blue Grey (Men's)', 895, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track.2 Lilac (Women's)" data-price="895" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track.2 Lilac (Women's)</h3>
+    <p>$895</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track.2 Lilac (Women's)', 895, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track.2 Black (Men's)" data-price="895" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track.2 Black (Men's)</h3>
+    <p>$895</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track.2 Black (Men's)', 895, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track.2 Black Green (Men's)" data-price="895" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track.2 Black Green (Men's)</h3>
+    <p>$895</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track.2 Black Green (Men's)', 895, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track.2 Yellow Purple (Men's)" data-price="895" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track.2 Yellow Purple (Men's)</h3>
+    <p>$895</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track.2 Yellow Purple (Men's)', 895, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track.2 White Red (Men's)" data-price="995" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track.2 White Red (Men's)</h3>
+    <p>$995</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track.2 White Red (Men's)', 995, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track.2 Metallic Purple (Women's)" data-price="895" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track.2 Metallic Purple (Women's)</h3>
+    <p>$895</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track.2 Metallic Purple (Women's)', 895, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker Mule 'Black White'" data-price="550" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker Mule 'Black White'</h3>
+    <p>$550</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker Mule 'Black White'', 550, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker Mule 'Dark Beige & Black Mesh & Nylon'" data-price="550" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker Mule 'Dark Beige & Black Mesh & Nylon'</h3>
+    <p>$550</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker Mule 'Dark Beige & Black Mesh & Nylon'', 550, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Clear Sole Sneaker 'Pink'" data-price="916" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Clear Sole Sneaker 'Pink'</h3>
+    <p>$916</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Clear Sole Sneaker 'Pink'', 916, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Beige - White Cream'" data-price="1040" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Beige - White Cream'</h3>
+    <p>$1040</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Beige - White Cream'', 1040, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Recycled Sole in Beige'" data-price="1143" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Recycled Sole in Beige'</h3>
+    <p>$1143</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Recycled Sole in Beige'', 1143, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Clear Sole Sneaker 'Monocol Fluo'" data-price="1248" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Clear Sole Sneaker 'Monocol Fluo'</h3>
+    <p>$1248</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Clear Sole Sneaker 'Monocol Fluo'', 1248, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Wmns Track Sneaker 'Faded Pink'" data-price="1066" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Wmns Track Sneaker 'Faded Pink'</h3>
+    <p>$1066</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Wmns Track Sneaker 'Faded Pink'', 1066, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Silver with Fur'" data-price="545" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Silver with Fur'</h3>
+    <p>$545</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Silver with Fur'', 545, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track LED Sneaker in Black" data-price="1115" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track LED Sneaker in Black</h3>
+    <p>$1115</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track LED Sneaker in Black', 1115, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track LED Sneaker in Grey Pink" data-price="857" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track LED Sneaker in Grey Pink</h3>
+    <p>$857</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track LED Sneaker in Grey Pink', 857, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track LED Sneaker in Light Grey" data-price="1050" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track LED Sneaker in Light Grey</h3>
+    <p>$1050</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track LED Sneaker in Light Grey', 1050, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Trainer in Light Blue Pink" data-price="1050" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Trainer in Light Blue Pink</h3>
+    <p>$1050</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Trainer in Light Blue Pink', 1050, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker in Faded Black" data-price="1050" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker in Faded Black</h3>
+    <p>$1050</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker in Faded Black', 1050, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker Clear Sole - Dark Grey" data-price="1210" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker Clear Sole - Dark Grey</h3>
+    <p>$1210</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker Clear Sole - Dark Grey', 1210, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker in Dark Grey Metallic" data-price="895" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker in Dark Grey Metallic</h3>
+    <p>$895</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker in Dark Grey Metallic', 895, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Black Grey Red'" data-price="803" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Black Grey Red'</h3>
+    <p>$803</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Black Grey Red'', 803, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker Tess 3.0 'Black Green White'" data-price="1312" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker Tess 3.0 'Black Green White'</h3>
+    <p>$1312</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker Tess 3.0 'Black Green White'', 1312, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Clear Sole 'Light Blue'" data-price="1681" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Clear Sole 'Light Blue'</h3>
+    <p>$1681</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Clear Sole 'Light Blue'', 1681, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track LED Trainer 'Lime'" data-price="1180" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track LED Trainer 'Lime'</h3>
+    <p>$1180</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track LED Trainer 'Lime'', 1180, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Trainers 'Burgundy Black'" data-price="650" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Trainers 'Burgundy Black'</h3>
+    <p>$650</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Trainers 'Burgundy Black'', 650, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track LED 3.0 Sneaker 'Grey White'" data-price="1100" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track LED 3.0 Sneaker 'Grey White'</h3>
+    <p>$1100</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track LED 3.0 Sneaker 'Grey White'', 1100, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'White - Red'" data-price="803" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'White - Red'</h3>
+    <p>$803</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'White - Red'', 803, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Black - Green Glow'" data-price="1312" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Black - Green Glow'</h3>
+    <p>$1312</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Black - Green Glow'', 1312, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'White - Green Glow'" data-price="727" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'White - Green Glow'</h3>
+    <p>$727</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'White - Green Glow'', 727, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Coffee Brown'" data-price="880" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Coffee Brown'</h3>
+    <p>$880</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Coffee Brown'', 880, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Black Silver Mesh and Nylon'" data-price="1134" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Black Silver Mesh and Nylon'</h3>
+    <p>$1134</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Black Silver Mesh and Nylon'', 1134, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Adidas x Balenciaga Track Clear Sole Sneaker 'White - Black'" data-price="603" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Adidas x Balenciaga Track Clear Sole Sneaker 'White - Black'</h3>
+    <p>$603</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Adidas x Balenciaga Track Clear Sole Sneaker 'White - Black'', 603, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga x Adidas Track Graffiti 'Black'" data-price="3059" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga x Adidas Track Graffiti 'Black'</h3>
+    <p>$3059</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga x Adidas Track Graffiti 'Black'', 3059, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Beige Pink Grey'" data-price="1040" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Beige Pink Grey'</h3>
+    <p>$1040</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Beige Pink Grey'', 1040, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Full Mesh in Lilac'" data-price="1066" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Full Mesh in Lilac'</h3>
+    <p>$1066</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Full Mesh in Lilac'', 1066, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Low Top Sneakers 'Multicolor'" data-price="1248" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Low Top Sneakers 'Multicolor'</h3>
+    <p>$1248</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Low Top Sneakers 'Multicolor'', 1248, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'White Neon Yellow'" data-price="489" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'White Neon Yellow'</h3>
+    <p>$489</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'White Neon Yellow'', 489, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Off-White and Dark Grey Mesh and Nylon'" data-price="1248" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Off-White and Dark Grey Mesh and Nylon'</h3>
+    <p>$1248</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Off-White and Dark Grey Mesh and Nylon'', 1248, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'White'" data-price="667" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'White'</h3>
+    <p>$667</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'White'', 667, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Clear Sole 'Baby Blue'" data-price="1681" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Clear Sole 'Baby Blue'</h3>
+    <p>$1681</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Clear Sole 'Baby Blue'', 1681, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Multicolor Mesh Rubber Fabric Lavender'" data-price="1248" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Multicolor Mesh Rubber Fabric Lavender'</h3>
+    <p>$1248</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Multicolor Mesh Rubber Fabric Lavender'', 1248, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Recycled Sole Medium Grey'" data-price="1248" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Recycled Sole Medium Grey'</h3>
+    <p>$1248</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Recycled Sole Medium Grey'', 1248, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Black Red Silver'" data-price="1012" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Black Red Silver'</h3>
+    <p>$1012</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Black Red Silver'', 1012, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Pink' 542436-W3SU5-5090" data-price="1066" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Pink' 542436-W3SU5-5090</h3>
+    <p>$1066</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Pink' 542436-W3SU5-5090', 1066, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Graffiti Sketch - Black' 542436-W3SR2-2315" data-price="3059" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Graffiti Sketch - Black' 542436-W3SR2-2315</h3>
+    <p>$3059</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Graffiti Sketch - Black' 542436-W3SR2-2315', 3059, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Beige and Black Mesh and Nylon'" data-price="815" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Beige and Black Mesh and Nylon'</h3>
+    <p>$815</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Beige and Black Mesh and Nylon'', 815, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Yellow, White, Beige, Grey and Black Mesh and Suede-like Fabric'" data-price="1040" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Yellow, White, Beige, Grey and Black Mesh and Suede-like Fabric'</h3>
+    <p>$1040</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Yellow, White, Beige, Grey and Black Mesh and Suede-like Fabric'', 1040, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sketch Sneakers 'White, Black, and Blue Double Foam and Mesh'" data-price="1271" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sketch Sneakers 'White, Black, and Blue Double Foam and Mesh'</h3>
+    <p>$1271</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sketch Sneakers 'White, Black, and Blue Double Foam and Mesh'', 1271, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Grey, Black and White Mesh and Suede-like Fabric'" data-price="1271" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Grey, Black and White Mesh and Suede-like Fabric'</h3>
+    <p>$1271</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Grey, Black and White Mesh and Suede-like Fabric'', 1271, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Balenciaga Track Sneaker 'Gray Navy Yellow' B-TRS-11" data-price="1312" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Balenciaga Track Sneaker 'Gray Navy Yellow' B-TRS-11</h3>
+    <p>$1312</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Balenciaga Track Sneaker 'Gray Navy Yellow' B-TRS-11', 1312, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="AW22 Leather Trash Bag" data-price="2007" data-sizes="Large">
+    <h3>AW22 Leather Trash Bag</h3>
+    <p>$2007</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('AW22 Leather Trash Bag', 2007, 'Large', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="24/7 M Tote Bag" data-price="1485" data-sizes="Medium">
+    <h3>24/7 M Tote Bag</h3>
+    <p>$1485</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('24/7 M Tote Bag', 1485, 'Medium', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="SneakerHead Top Handle Bag" data-price="2150" data-sizes="Medium">
+    <h3>SneakerHead Top Handle Bag</h3>
+    <p>$2150</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('SneakerHead Top Handle Bag', 2150, 'Medium', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Chips Bag in Red Glossy Calfskin" data-price="1890" data-sizes="9.8 x 6.3 x 2 inches">
+    <h3>Chips Bag in Red Glossy Calfskin</h3>
+    <p>$1890</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Chips Bag in Red Glossy Calfskin', 1890, '9.8 x 6.3 x 2 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Shopper Garment Bag Tote" data-price="3550" data-sizes="23 x 15 x 7 inches">
+    <h3>Shopper Garment Bag Tote</h3>
+    <p>$3550</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Shopper Garment Bag Tote', 3550, '23 x 15 x 7 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Monaco Chain Medium Bag" data-price="2850" data-sizes="10.6 x 6.7 x 2.8 inches">
+    <h3>Monaco Chain Medium Bag</h3>
+    <p>$2850</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Monaco Chain Medium Bag', 2850, '10.6 x 6.7 x 2.8 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Black Top Handle Bag" data-price="5865" data-sizes="Large">
+    <h3>Black Top Handle Bag</h3>
+    <p>$5865</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Black Top Handle Bag', 5865, 'Large', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Rodeo Small Leather Tote Bag" data-price="3150" data-sizes="Small">
+    <h3>Rodeo Small Leather Tote Bag</h3>
+    <p>$3150</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Rodeo Small Leather Tote Bag', 3150, 'Small', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Neo Cagole Small Tote Bag" data-price="2299" data-sizes="11.8 x 7.5 x 2.8 inches">
+    <h3>Neo Cagole Small Tote Bag</h3>
+    <p>$2299</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Neo Cagole Small Tote Bag', 2299, '11.8 x 7.5 x 2.8 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Superbusy Small Sling Bag" data-price="2300" data-sizes="Small">
+    <h3>Superbusy Small Sling Bag</h3>
+    <p>$2300</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Superbusy Small Sling Bag', 2300, 'Small', 'In Stock (10+)')">Preview</button>
+  </div>
+
 </div>
 <div class="modal" id="modal">
   <div class="modal-content">
@@ -137,9 +552,9 @@
       const priceVal = parseInt(card.dataset.price);
       let show = name.includes(search);
       if (size && !sizes.includes(size)) show = false;
-      if (price === "low" && priceVal >= 900) show = false;
-      if (price === "mid" && (priceVal < 900 || priceVal > 1000)) show = false;
-      if (price === "high" && priceVal <= 1000) show = false;
+      if (price === "low" && priceVal >= 200) show = false;
+      if (price === "mid" && (priceVal < 200 || priceVal > 500)) show = false;
+      if (price === "high" && priceVal <= 500) show = false;
       card.style.display = show ? "block" : "none";
     });
   }

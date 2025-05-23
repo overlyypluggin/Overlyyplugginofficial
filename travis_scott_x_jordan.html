@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,10 +16,6 @@
       width: 200px;
       text-align: center;
       cursor: pointer;
-    }
-    .stock {
-      font-size: 0.9rem;
-      margin-top: 5px;
     }
     .modal {
       display: none;
@@ -55,52 +50,157 @@
   <select id="sizeFilter" onchange="filterProducts()">
     <option value="">All Sizes</option>
     <option value="6">6</option><option value="7">7</option><option value="8">8</option>
-    <option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+    <option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option>
   </select>
   <select id="priceFilter" onchange="filterProducts()">
     <option value="">All Prices</option>
-    <option value="low">Under $900</option>
-    <option value="mid">$900–$1000</option>
-    <option value="high">Over $1000</option>
+    <option value="low">Under $200</option>
+    <option value="mid">$200–$500</option>
+    <option value="high">Over $500</option>
   </select>
 </div>
 <div class="grid" id="productGrid">
 
-    <div class="card" data-name="Travis Scott X Jordan Track Black" data-price="820" data-sizes="7, 8, 9, 10, 11">
-      <h3>Travis Scott X Jordan Track Black</h3>
-      <p>$820</p>
-      <p class="stock">In Stock (3 left)</p>
-      <button onclick="openModal('Travis Scott X Jordan Track Black', 820, '7, 8, 9, 10, 11', 'In Stock (3 left)')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Travis Scott X Jordan Triple S Cream" data-price="975" data-sizes="6, 7, 8, 9">
-      <h3>Travis Scott X Jordan Triple S Cream</h3>
-      <p>$975</p>
-      <p class="stock">In Stock (2 left)</p>
-      <button onclick="openModal('Travis Scott X Jordan Triple S Cream', 975, '6, 7, 8, 9', 'In Stock (2 left)')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Travis Scott X Jordan Runner White" data-price="1050" data-sizes="8, 9, 10, 11, 12">
-      <h3>Travis Scott X Jordan Runner White</h3>
-      <p>$1050</p>
-      <p class="stock">In Stock (5 left)</p>
-      <button onclick="openModal('Travis Scott X Jordan Runner White', 1050, '8, 9, 10, 11, 12', 'In Stock (5 left)')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Travis Scott X Jordan Speed 2.0 Black" data-price="895" data-sizes="7, 8, 9">
-      <h3>Travis Scott X Jordan Speed 2.0 Black</h3>
-      <p>$895</p>
-      <p class="stock">Sold Out</p>
-      <button onclick="openModal('Travis Scott X Jordan Speed 2.0 Black', 895, '7, 8, 9', 'Sold Out')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Travis Scott X Jordan Track Clear Sole" data-price="860" data-sizes="9, 10, 11">
-      <h3>Travis Scott X Jordan Track Clear Sole</h3>
-      <p>$860</p>
-      <p class="stock">In Stock (4 left)</p>
-      <button onclick="openModal('Travis Scott X Jordan Track Clear Sole', 860, '9, 10, 11', 'In Stock (4 left)')">Preview</button>
-    </div>
-    
+  <div class="card" data-name="Air Jordan 1 Retro High OG 'Mocha'" data-price="1210" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 1 Retro High OG 'Mocha'</h3>
+    <p>$1210</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 1 Retro High OG 'Mocha'', 1210, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 1 Low OG 'Reverse Mocha'" data-price="1114" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 1 Low OG 'Reverse Mocha'</h3>
+    <p>$1114</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 1 Low OG 'Reverse Mocha'', 1114, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 1 Low OG 'Black Phantom'" data-price="878" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 1 Low OG 'Black Phantom'</h3>
+    <p>$878</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 1 Low OG 'Black Phantom'', 878, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 1 Low OG 'Velvet Brown'" data-price="409" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 1 Low OG 'Velvet Brown'</h3>
+    <p>$409</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 1 Low OG 'Velvet Brown'', 409, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 1 Low OG 'Medium Olive'" data-price="536" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 1 Low OG 'Medium Olive'</h3>
+    <p>$536</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 1 Low OG 'Medium Olive'', 536, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 1 Low OG 'Canary'" data-price="302" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 1 Low OG 'Canary'</h3>
+    <p>$302</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 1 Low OG 'Canary'', 302, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 1 Low OG 'Neutral Olive' (Golf)" data-price="1006" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 1 Low OG 'Neutral Olive' (Golf)</h3>
+    <p>$1006</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 1 Low OG 'Neutral Olive' (Golf)', 1006, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 1 Retro High OG 'Fragment'" data-price="1429" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 1 Retro High OG 'Fragment'</h3>
+    <p>$1429</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 1 Retro High OG 'Fragment'', 1429, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 1 Low OG 'Fragment'" data-price="1638" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 1 Low OG 'Fragment'</h3>
+    <p>$1638</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 1 Low OG 'Fragment'', 1638, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 6 Retro 'British Khaki'" data-price="541" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 6 Retro 'British Khaki'</h3>
+    <p>$541</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 6 Retro 'British Khaki'', 541, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 6 Retro 'Olive'" data-price="374" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 6 Retro 'Olive'</h3>
+    <p>$374</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 6 Retro 'Olive'', 374, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 4 Retro 'Cactus Jack'" data-price="1355" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 4 Retro 'Cactus Jack'</h3>
+    <p>$1355</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 4 Retro 'Cactus Jack'', 1355, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 33 NRG 'Army Olive'" data-price="327" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 33 NRG 'Army Olive'</h3>
+    <p>$327</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 33 NRG 'Army Olive'', 327, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Jordan Jumpman Jack TR 'Bright Cactus'" data-price="232" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Jordan Jumpman Jack TR 'Bright Cactus'</h3>
+    <p>$232</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Jordan Jumpman Jack TR 'Bright Cactus'', 232, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Jordan Jumpman Jack TR 'University Red'" data-price="260" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Jordan Jumpman Jack TR 'University Red'</h3>
+    <p>$260</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Jordan Jumpman Jack TR 'University Red'', 260, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Jordan Jumpman Jack TR 'Sail'" data-price="289" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Jordan Jumpman Jack TR 'Sail'</h3>
+    <p>$289</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Jordan Jumpman Jack TR 'Sail'', 289, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 1 Low OG 'Reverse Olive'" data-price="499" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 1 Low OG 'Reverse Olive'</h3>
+    <p>$499</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 1 Low OG 'Reverse Olive'', 499, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 1 Low OG 'Mocha'" data-price="1880" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 1 Low OG 'Mocha'</h3>
+    <p>$1880</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 1 Low OG 'Mocha'', 1880, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 1 Low OG 'Paris Blue'" data-price="506" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 1 Low OG 'Paris Blue'</h3>
+    <p>$506</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 1 Low OG 'Paris Blue'', 506, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Air Jordan 1 Low OG 'Dream Blue'" data-price="340" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Air Jordan 1 Low OG 'Dream Blue'</h3>
+    <p>$340</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Air Jordan 1 Low OG 'Dream Blue'', 340, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
 </div>
 <div class="modal" id="modal">
   <div class="modal-content">
@@ -137,9 +237,9 @@
       const priceVal = parseInt(card.dataset.price);
       let show = name.includes(search);
       if (size && !sizes.includes(size)) show = false;
-      if (price === "low" && priceVal >= 900) show = false;
-      if (price === "mid" && (priceVal < 900 || priceVal > 1000)) show = false;
-      if (price === "high" && priceVal <= 1000) show = false;
+      if (price === "low" && priceVal >= 200) show = false;
+      if (price === "mid" && (priceVal < 200 || priceVal > 500)) show = false;
+      if (price === "high" && priceVal <= 500) show = false;
       card.style.display = show ? "block" : "none";
     });
   }

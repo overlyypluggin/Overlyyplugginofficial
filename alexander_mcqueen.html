@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,10 +16,6 @@
       width: 200px;
       text-align: center;
       cursor: pointer;
-    }
-    .stock {
-      font-size: 0.9rem;
-      margin-top: 5px;
     }
     .modal {
       display: none;
@@ -55,52 +50,157 @@
   <select id="sizeFilter" onchange="filterProducts()">
     <option value="">All Sizes</option>
     <option value="6">6</option><option value="7">7</option><option value="8">8</option>
-    <option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+    <option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option>
   </select>
   <select id="priceFilter" onchange="filterProducts()">
     <option value="">All Prices</option>
-    <option value="low">Under $900</option>
-    <option value="mid">$900–$1000</option>
-    <option value="high">Over $1000</option>
+    <option value="low">Under $200</option>
+    <option value="mid">$200–$500</option>
+    <option value="high">Over $500</option>
   </select>
 </div>
 <div class="grid" id="productGrid">
 
-    <div class="card" data-name="Alexander Mcqueen Track Black" data-price="820" data-sizes="7, 8, 9, 10, 11">
-      <h3>Alexander Mcqueen Track Black</h3>
-      <p>$820</p>
-      <p class="stock">In Stock (3 left)</p>
-      <button onclick="openModal('Alexander Mcqueen Track Black', 820, '7, 8, 9, 10, 11', 'In Stock (3 left)')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Alexander Mcqueen Triple S Cream" data-price="975" data-sizes="6, 7, 8, 9">
-      <h3>Alexander Mcqueen Triple S Cream</h3>
-      <p>$975</p>
-      <p class="stock">In Stock (2 left)</p>
-      <button onclick="openModal('Alexander Mcqueen Triple S Cream', 975, '6, 7, 8, 9', 'In Stock (2 left)')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Alexander Mcqueen Runner White" data-price="1050" data-sizes="8, 9, 10, 11, 12">
-      <h3>Alexander Mcqueen Runner White</h3>
-      <p>$1050</p>
-      <p class="stock">In Stock (5 left)</p>
-      <button onclick="openModal('Alexander Mcqueen Runner White', 1050, '8, 9, 10, 11, 12', 'In Stock (5 left)')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Alexander Mcqueen Speed 2.0 Black" data-price="895" data-sizes="7, 8, 9">
-      <h3>Alexander Mcqueen Speed 2.0 Black</h3>
-      <p>$895</p>
-      <p class="stock">Sold Out</p>
-      <button onclick="openModal('Alexander Mcqueen Speed 2.0 Black', 895, '7, 8, 9', 'Sold Out')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Alexander Mcqueen Track Clear Sole" data-price="860" data-sizes="9, 10, 11">
-      <h3>Alexander Mcqueen Track Clear Sole</h3>
-      <p>$860</p>
-      <p class="stock">In Stock (4 left)</p>
-      <button onclick="openModal('Alexander Mcqueen Track Clear Sole', 860, '9, 10, 11', 'In Stock (4 left)')">Preview</button>
-    </div>
-    
+  <div class="card" data-name="Oversized Sneaker in White/Black" data-price="590" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Sneaker in White/Black</h3>
+    <p>$590</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Sneaker in White/Black', 590, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Oversized Sneaker in White/Blue" data-price="760" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Sneaker in White/Blue</h3>
+    <p>$760</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Sneaker in White/Blue', 760, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Oversized Sneaker in White/Green" data-price="590" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Sneaker in White/Green</h3>
+    <p>$590</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Sneaker in White/Green', 590, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Oversized Sneaker in White/Natural" data-price="760" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Sneaker in White/Natural</h3>
+    <p>$760</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Sneaker in White/Natural', 760, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Oversized Sneaker in Black/White" data-price="590" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Sneaker in Black/White</h3>
+    <p>$590</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Sneaker in Black/White', 590, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Oversized Retro Sneaker in White/Rock/Black" data-price="830" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Retro Sneaker in White/Rock/Black</h3>
+    <p>$830</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Retro Sneaker in White/Rock/Black', 830, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Oversized Retro Sneaker in White/Blue" data-price="830" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Retro Sneaker in White/Blue</h3>
+    <p>$830</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Retro Sneaker in White/Blue', 830, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Tread Slick Boot in White" data-price="850" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Tread Slick Boot in White</h3>
+    <p>$850</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Tread Slick Boot in White', 850, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Tread Slick Boot in Black/White" data-price="850" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Tread Slick Boot in Black/White</h3>
+    <p>$850</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Tread Slick Boot in Black/White', 850, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Flexion Sneaker in Burgundy/Orange" data-price="790" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Flexion Sneaker in Burgundy/Orange</h3>
+    <p>$790</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Flexion Sneaker in Burgundy/Orange', 790, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Sprint Runner in White/Silver" data-price="850" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Sprint Runner in White/Silver</h3>
+    <p>$850</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Sprint Runner in White/Silver', 850, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Oversized Sneaker in White/Pink" data-price="760" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Sneaker in White/Pink</h3>
+    <p>$760</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Sneaker in White/Pink', 760, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Oversized Sneaker in White/Mint" data-price="590" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Sneaker in White/Mint</h3>
+    <p>$590</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Sneaker in White/Mint', 590, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Oversized Sneaker in White/Shirting Blue" data-price="590" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Sneaker in White/Shirting Blue</h3>
+    <p>$590</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Sneaker in White/Shirting Blue', 590, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Oversized Sneaker in White/Mirror" data-price="760" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Sneaker in White/Mirror</h3>
+    <p>$760</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Sneaker in White/Mirror', 760, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Oversized Sneaker in White/Paris Blue" data-price="506" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Sneaker in White/Paris Blue</h3>
+    <p>$506</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Sneaker in White/Paris Blue', 506, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Oversized Sneaker in White/Dream Blue (Women's)" data-price="340" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Sneaker in White/Dream Blue (Women's)</h3>
+    <p>$340</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Sneaker in White/Dream Blue (Women's)', 340, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Oversized Sneaker in White/Shock Pink (Women's)" data-price="352" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Sneaker in White/Shock Pink (Women's)</h3>
+    <p>$352</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Sneaker in White/Shock Pink (Women's)', 352, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Oversized Sneaker in White/Red" data-price="389" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Sneaker in White/Red</h3>
+    <p>$389</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Sneaker in White/Red', 389, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Oversized Sneaker in White/Black Sole" data-price="505" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Oversized Sneaker in White/Black Sole</h3>
+    <p>$505</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Oversized Sneaker in White/Black Sole', 505, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
 </div>
 <div class="modal" id="modal">
   <div class="modal-content">
@@ -137,9 +237,9 @@
       const priceVal = parseInt(card.dataset.price);
       let show = name.includes(search);
       if (size && !sizes.includes(size)) show = false;
-      if (price === "low" && priceVal >= 900) show = false;
-      if (price === "mid" && (priceVal < 900 || priceVal > 1000)) show = false;
-      if (price === "high" && priceVal <= 1000) show = false;
+      if (price === "low" && priceVal >= 200) show = false;
+      if (price === "mid" && (priceVal < 200 || priceVal > 500)) show = false;
+      if (price === "high" && priceVal <= 500) show = false;
       card.style.display = show ? "block" : "none";
     });
   }

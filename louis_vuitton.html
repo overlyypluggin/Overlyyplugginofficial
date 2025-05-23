@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,10 +16,6 @@
       width: 200px;
       text-align: center;
       cursor: pointer;
-    }
-    .stock {
-      font-size: 0.9rem;
-      margin-top: 5px;
     }
     .modal {
       display: none;
@@ -55,52 +50,395 @@
   <select id="sizeFilter" onchange="filterProducts()">
     <option value="">All Sizes</option>
     <option value="6">6</option><option value="7">7</option><option value="8">8</option>
-    <option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+    <option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option>
   </select>
   <select id="priceFilter" onchange="filterProducts()">
     <option value="">All Prices</option>
-    <option value="low">Under $900</option>
-    <option value="mid">$900–$1000</option>
-    <option value="high">Over $1000</option>
+    <option value="low">Under $200</option>
+    <option value="mid">$200–$500</option>
+    <option value="high">Over $500</option>
   </select>
 </div>
 <div class="grid" id="productGrid">
 
-    <div class="card" data-name="Louis Vuitton Track Black" data-price="820" data-sizes="7, 8, 9, 10, 11">
-      <h3>Louis Vuitton Track Black</h3>
-      <p>$820</p>
-      <p class="stock">In Stock (3 left)</p>
-      <button onclick="openModal('Louis Vuitton Track Black', 820, '7, 8, 9, 10, 11', 'In Stock (3 left)')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Louis Vuitton Triple S Cream" data-price="975" data-sizes="6, 7, 8, 9">
-      <h3>Louis Vuitton Triple S Cream</h3>
-      <p>$975</p>
-      <p class="stock">In Stock (2 left)</p>
-      <button onclick="openModal('Louis Vuitton Triple S Cream', 975, '6, 7, 8, 9', 'In Stock (2 left)')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Louis Vuitton Runner White" data-price="1050" data-sizes="8, 9, 10, 11, 12">
-      <h3>Louis Vuitton Runner White</h3>
-      <p>$1050</p>
-      <p class="stock">In Stock (5 left)</p>
-      <button onclick="openModal('Louis Vuitton Runner White', 1050, '8, 9, 10, 11, 12', 'In Stock (5 left)')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Louis Vuitton Speed 2.0 Black" data-price="895" data-sizes="7, 8, 9">
-      <h3>Louis Vuitton Speed 2.0 Black</h3>
-      <p>$895</p>
-      <p class="stock">Sold Out</p>
-      <button onclick="openModal('Louis Vuitton Speed 2.0 Black', 895, '7, 8, 9', 'Sold Out')">Preview</button>
-    </div>
-    
-    <div class="card" data-name="Louis Vuitton Track Clear Sole" data-price="860" data-sizes="9, 10, 11">
-      <h3>Louis Vuitton Track Clear Sole</h3>
-      <p>$860</p>
-      <p class="stock">In Stock (4 left)</p>
-      <button onclick="openModal('Louis Vuitton Track Clear Sole', 860, '9, 10, 11', 'In Stock (4 left)')">Preview</button>
-    </div>
-    
+  <div class="card" data-name="Louis Vuitton LV Trainer Sneaker" data-price="1290" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton LV Trainer Sneaker</h3>
+    <p>$1290</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton LV Trainer Sneaker', 1290, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton LV Trainer Low Nigo LV MADE Black Red" data-price="1499" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton LV Trainer Low Nigo LV MADE Black Red</h3>
+    <p>$1499</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton LV Trainer Low Nigo LV MADE Black Red', 1499, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON Trainer Sneakers 'Black Monogram' 1AARER" data-price="2272.68" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON Trainer Sneakers 'Black Monogram' 1AARER</h3>
+    <p>$2272.68</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON Trainer Sneakers 'Black Monogram' 1AARER', 2272.68, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton LV Trainer '54' White Blue Sneaker" data-price="1622" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton LV Trainer '54' White Blue Sneaker</h3>
+    <p>$1622</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton LV Trainer '54' White Blue Sneaker', 1622, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON LV Trainer Maxi Sneakers 'Green' 1AB8SD" data-price="2287.66" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON LV Trainer Maxi Sneakers 'Green' 1AB8SD</h3>
+    <p>$2287.66</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON LV Trainer Maxi Sneakers 'Green' 1AB8SD', 2287.66, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON LV Trainer Maxi Sneakers 'Black' 1ABZQ9" data-price="2136.79" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON LV Trainer Maxi Sneakers 'Black' 1ABZQ9</h3>
+    <p>$2136.79</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON LV Trainer Maxi Sneakers 'Black' 1ABZQ9', 2136.79, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON LV Trainer Sneakers 'White Navy' 1ABNIH" data-price="3045.22" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON LV Trainer Sneakers 'White Navy' 1ABNIH</h3>
+    <p>$3045.22</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON LV Trainer Sneakers 'White Navy' 1ABNIH', 3045.22, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON LV Trainer Sneakers 'White Green' 1ABFAU" data-price="1907.81" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON LV Trainer Sneakers 'White Green' 1ABFAU</h3>
+    <p>$1907.81</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON LV Trainer Sneakers 'White Green' 1ABFAU', 1907.81, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON LV Trainer Sneakers 'White Blue Red' 1ABG7E" data-price="1510.84" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON LV Trainer Sneakers 'White Blue Red' 1ABG7E</h3>
+    <p>$1510.84</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON LV Trainer Sneakers 'White Blue Red' 1ABG7E', 1510.84, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON Trainer Sneakers 'White Orange' 1A811N" data-price="1952.75" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON Trainer Sneakers 'White Orange' 1A811N</h3>
+    <p>$1952.75</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON Trainer Sneakers 'White Orange' 1A811N', 1952.75, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON LV Trainer 2 Sneakers 'Black' 1AAHC4" data-price="1531.17" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON LV Trainer 2 Sneakers 'Black' 1AAHC4</h3>
+    <p>$1531.17</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON LV Trainer 2 Sneakers 'Black' 1AAHC4', 1531.17, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton - White / Black Leather Trainer Sneakers" data-price="1990" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton - White / Black Leather Trainer Sneakers</h3>
+    <p>$1990</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton - White / Black Leather Trainer Sneakers', 1990, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON LV Trainer Sneakers 'Grey' 1AC5CR" data-price="850" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON LV Trainer Sneakers 'Grey' 1AC5CR</h3>
+    <p>$850</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON LV Trainer Sneakers 'Grey' 1AC5CR', 850, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON Trainer Sneakers 'Green' 1A9VNM" data-price="1838.26" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON Trainer Sneakers 'Green' 1A9VNM</h3>
+    <p>$1838.26</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON Trainer Sneakers 'Green' 1A9VNM', 1838.26, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton LV x TM LV Trainer Sneaker" data-price="1660" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton LV x TM LV Trainer Sneaker</h3>
+    <p>$1660</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton LV x TM LV Trainer Sneaker', 1660, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton LV Trainer Maxi Sneaker" data-price="1730" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton LV Trainer Maxi Sneaker</h3>
+    <p>$1730</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton LV Trainer Maxi Sneaker', 1730, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton Monogram Multicolor LV Trainer Sneakers VL1214" data-price="2699" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton Monogram Multicolor LV Trainer Sneakers VL1214</h3>
+    <p>$2699</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton Monogram Multicolor LV Trainer Sneakers VL1214', 2699, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON Frontrow Sneaker Cacao" data-price="1040" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON Frontrow Sneaker Cacao</h3>
+    <p>$1040</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON Frontrow Sneaker Cacao', 1040, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton Time Out Sneaker" data-price="1200" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton Time Out Sneaker</h3>
+    <p>$1200</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton Time Out Sneaker', 1200, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton Run Away Sneaker" data-price="1180" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton Run Away Sneaker</h3>
+    <p>$1180</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton Run Away Sneaker', 1180, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton LV Skate Sneaker 'Red White'" data-price="2000" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton LV Skate Sneaker 'Red White'</h3>
+    <p>$2000</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton LV Skate Sneaker 'Red White'', 2000, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton LV Skate Monogram Trainer Purple Sneaker" data-price="2044" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton LV Skate Monogram Trainer Purple Sneaker</h3>
+    <p>$2044</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton LV Skate Monogram Trainer Purple Sneaker', 2044, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON Skate Sneakers 'Black White' 1ABZ5B" data-price="1690.6" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON Skate Sneakers 'Black White' 1ABZ5B</h3>
+    <p>$1690.6</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON Skate Sneakers 'Black White' 1ABZ5B', 1690.6, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON LV Skate Sneakers 'Blue' 1ABMH9" data-price="4892.04" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON LV Skate Sneakers 'Blue' 1ABMH9</h3>
+    <p>$4892.04</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON LV Skate Sneakers 'Blue' 1ABMH9', 4892.04, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton LV Skate 'Blackout' Sneakers" data-price="2500" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton LV Skate 'Blackout' Sneakers</h3>
+    <p>$2500</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton LV Skate 'Blackout' Sneakers', 2500, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON LV Skate Sneakers 'Black White' 1ABZ45" data-price="2636.48" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON LV Skate Sneakers 'Black White' 1ABZ45</h3>
+    <p>$2636.48</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON LV Skate Sneakers 'Black White' 1ABZ45', 2636.48, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON Skate Sneakers 'Green White' 1AC520" data-price="1771.92" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON Skate Sneakers 'Green White' 1AC520</h3>
+    <p>$1771.92</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON Skate Sneakers 'Green White' 1AC520', 1771.92, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON Skate Sneakers 'Brown' 1ABMG5" data-price="3931.18" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON Skate Sneakers 'Brown' 1ABMG5</h3>
+    <p>$3931.18</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON Skate Sneakers 'Brown' 1ABMG5', 3931.18, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="LOUIS VUITTON Skate Sneakers 'Grey Black' 1ABZ48" data-price="2615.08" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>LOUIS VUITTON Skate Sneakers 'Grey Black' 1ABZ48</h3>
+    <p>$2615.08</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('LOUIS VUITTON Skate Sneakers 'Grey Black' 1ABZ48', 2615.08, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton LV Skate Sneaker 'Black/White/Blue'" data-price="2500" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton LV Skate Sneaker 'Black/White/Blue'</h3>
+    <p>$2500</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton LV Skate Sneaker 'Black/White/Blue'', 2500, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton LV Skate Sneaker 'Black'" data-price="2750" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton LV Skate Sneaker 'Black'</h3>
+    <p>$2750</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton LV Skate Sneaker 'Black'', 2750, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton LV Skate Sneaker 'Black/White/Green'" data-price="2500" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton LV Skate Sneaker 'Black/White/Green'</h3>
+    <p>$2500</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton LV Skate Sneaker 'Black/White/Green'', 2500, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton LV Skate Sneaker" data-price="1340" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton LV Skate Sneaker</h3>
+    <p>$1340</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton LV Skate Sneaker', 1340, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Louis Vuitton LV Skate Sneaker" data-price="1370" data-sizes="7, 8, 9, 10, 11, 12, 13">
+    <h3>Louis Vuitton LV Skate Sneaker</h3>
+    <p>$1370</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Louis Vuitton LV Skate Sneaker', 1370, '7, 8, 9, 10, 11, 12, 13', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Neverfull MM" data-price="2030" data-sizes="12.6 x 11.4 x 6.7 inches">
+    <h3>Neverfull MM</h3>
+    <p>$2030</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Neverfull MM', 2030, '12.6 x 11.4 x 6.7 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Speedy 30" data-price="1550" data-sizes="11.8 x 8.3 x 6.7 inches">
+    <h3>Speedy 30</h3>
+    <p>$1550</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Speedy 30', 1550, '11.8 x 8.3 x 6.7 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Alma BB" data-price="2020" data-sizes="9.8 x 7.5 x 4.7 inches">
+    <h3>Alma BB</h3>
+    <p>$2020</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Alma BB', 2020, '9.8 x 7.5 x 4.7 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Capucines MM" data-price="7550" data-sizes="14.2 x 9.1 x 4.7 inches">
+    <h3>Capucines MM</h3>
+    <p>$7550</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Capucines MM', 7550, '14.2 x 9.1 x 4.7 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Twist MM" data-price="4300" data-sizes="9.1 x 6.7 x 3.9 inches">
+    <h3>Twist MM</h3>
+    <p>$4300</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Twist MM', 4300, '9.1 x 6.7 x 3.9 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Pochette Métis" data-price="2570" data-sizes="9.8 x 7.5 x 2.8 inches">
+    <h3>Pochette Métis</h3>
+    <p>$2570</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Pochette Métis', 2570, '9.8 x 7.5 x 2.8 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="OnTheGo MM" data-price="3250" data-sizes="13.8 x 10.6 x 5.5 inches">
+    <h3>OnTheGo MM</h3>
+    <p>$3250</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('OnTheGo MM', 3250, '13.8 x 10.6 x 5.5 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Noé BB" data-price="1720" data-sizes="8.7 x 10.2 x 5.9 inches">
+    <h3>Noé BB</h3>
+    <p>$1720</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Noé BB', 1720, '8.7 x 10.2 x 5.9 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Palm Springs Mini" data-price="2440" data-sizes="6.7 x 8.7 x 3.9 inches">
+    <h3>Palm Springs Mini</h3>
+    <p>$2440</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Palm Springs Mini', 2440, '6.7 x 8.7 x 3.9 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Loop" data-price="2370" data-sizes="9.1 x 5.1 x 2.4 inches">
+    <h3>Loop</h3>
+    <p>$2370</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Loop', 2370, '9.1 x 5.1 x 2.4 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Multi Pochette Accessoires" data-price="2570" data-sizes="9.8 x 5.3 x 1.6 inches">
+    <h3>Multi Pochette Accessoires</h3>
+    <p>$2570</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Multi Pochette Accessoires', 2570, '9.8 x 5.3 x 1.6 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Graceful MM" data-price="1960" data-sizes="16.5 x 13.8 x 5.5 inches">
+    <h3>Graceful MM</h3>
+    <p>$1960</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Graceful MM', 1960, '16.5 x 13.8 x 5.5 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Keepall Bandoulière 55" data-price="2570" data-sizes="21.7 x 12.2 x 9.4 inches">
+    <h3>Keepall Bandoulière 55</h3>
+    <p>$2570</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Keepall Bandoulière 55', 2570, '21.7 x 12.2 x 9.4 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Petit Noé" data-price="1780" data-sizes="10.2 x 10.2 x 7.5 inches">
+    <h3>Petit Noé</h3>
+    <p>$1780</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Petit Noé', 1780, '10.2 x 10.2 x 7.5 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Siena MM" data-price="1810" data-sizes="13.4 x 9.1 x 7.1 inches">
+    <h3>Siena MM</h3>
+    <p>$1810</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Siena MM', 1810, '13.4 x 9.1 x 7.1 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Artsy MM" data-price="2540" data-sizes="16.3 x 12.6 x 7.1 inches">
+    <h3>Artsy MM</h3>
+    <p>$2540</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Artsy MM', 2540, '16.3 x 12.6 x 7.1 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Montsouris PM" data-price="2370" data-sizes="9.8 x 11.4 x 5.1 inches">
+    <h3>Montsouris PM</h3>
+    <p>$2370</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Montsouris PM', 2370, '9.8 x 11.4 x 5.1 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Cluny BB" data-price="2570" data-sizes="11 x 8.1 x 4.1 inches">
+    <h3>Cluny BB</h3>
+    <p>$2570</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Cluny BB', 2570, '11 x 8.1 x 4.1 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Tivoli PM" data-price="1960" data-sizes="11.8 x 8.3 x 5.5 inches">
+    <h3>Tivoli PM</h3>
+    <p>$1960</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Tivoli PM', 1960, '11.8 x 8.3 x 5.5 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
+  <div class="card" data-name="Boetie PM" data-price="1860" data-sizes="13 x 9.8 x 5.5 inches">
+    <h3>Boetie PM</h3>
+    <p>$1860</p>
+    <p class="stock">In Stock (10+)</p>
+    <button onclick="openModal('Boetie PM', 1860, '13 x 9.8 x 5.5 inches', 'In Stock (10+)')">Preview</button>
+  </div>
+
 </div>
 <div class="modal" id="modal">
   <div class="modal-content">
@@ -137,9 +475,9 @@
       const priceVal = parseInt(card.dataset.price);
       let show = name.includes(search);
       if (size && !sizes.includes(size)) show = false;
-      if (price === "low" && priceVal >= 900) show = false;
-      if (price === "mid" && (priceVal < 900 || priceVal > 1000)) show = false;
-      if (price === "high" && priceVal <= 1000) show = false;
+      if (price === "low" && priceVal >= 200) show = false;
+      if (price === "mid" && (priceVal < 200 || priceVal > 500)) show = false;
+      if (price === "high" && priceVal <= 500) show = false;
       card.style.display = show ? "block" : "none";
     });
   }
